@@ -1,6 +1,6 @@
-# x.y - Template
+# 0.0 - Cheatsheets
 
-Repository for "Template".
+Repository for "Cheatsheets".
 
 
 ## Use instructions
