@@ -1,0 +1,1707 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[italian]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Formulario - Fisica 2 - Onde}
+\author{Pietro Cendron}
+
+\begin{document}
+\maketitle
+
+\section*{C.11 - Onde elettromagnetiche}
+I campi \textbf{E} e \textbf{B}  sono strettamente correlati, sono due aspetti di un’unica entità: il campo elettromagnetico.\\Le variazioni di \textbf{E} e \textbf{B} si propagano non istantaneamente,
+ma con velocità finita. \\ Nel vuoto è pari a 
+\begin{equation}
+c = \sqrt{\frac{1}{\mu_0\varepsilon_0}}=3\cdot10^8 m/s 
+\nonumber
+\end{equation}
+L’esistenza delle onde elettromagnetiche deriva dalle equazioni di Maxwell.\\
+Esiste una condizione per cui le equazioni per \textbf{E} e \textbf{H} sono completamente simmetriche: supponiamo di essere nel vuoto (o in un mezzo lineare) e in assenza di sorgenti, con 
+\begin{equation}
+\rho=0 
+\nonumber
+\end{equation}
+\begin{equation}
+\textbf{j}=0
+\nonumber
+\end{equation}
+e sapendo che
+\begin{equation}
+\textbf{D}=\varepsilon_0\textbf{E}
+\nonumber
+\end{equation}
+\begin{equation}
+\textbf{B}=\mu_0\textbf{H}
+\nonumber
+\end{equation}
+le equazioni di Maxwell diventano le seguenti
+\begin{align*}
+\text{div}\textbf{E}&=0  &  \text{rot}\textbf{E}&=-\mu_0\frac{\partial\textbf{H}}{\partial t}
+\nonumber
+\end{align*}
+\begin{align*}
+\text{div}\textbf{H}&=0  &  \text{rot}\textbf{H}&=-\varepsilon_0\frac{\partial\textbf{E}}{\partial t}
+\nonumber
+\end{align*}
+Le equazioni dei potenziali di \textbf{E} e \textbf{H} in assenza di cariche e di densità di corrente sono le seguenti:
+\begin{equation}
+\nabla^2\textbf{H}-\frac{1}{c^2}\frac{\partial^2\textbf{H}}{\partial t^2}=0  
+\nonumber
+\end{equation}
+\begin{equation}
+\nabla^2\textbf{E}-\frac{1}{c^2}\frac{\partial^2\textbf{E}}{\partial t^2}=0    
+\nonumber
+\end{equation}
+In un mezzo lineare le due equazioni sono formalmente identiche, con \emph{v} al posto di \emph{c}:
+\begin{equation}
+    \emph{v}^2=\frac{1}{\mu\varepsilon}
+    \nonumber
+\end{equation}
+In generale si scrive
+\begin{equation}
+\nabla^2\Phi-\frac{1}{c^2}\frac{\partial^2\Phi}{\partial t^2}=0 
+\nonumber
+\end{equation}
+che prende il nome di equazione delle onde poichè descrive il propagarsi di qualsiasi perturbazione, non solo elettromagnetica.\\ \\
+Le onde piane sono un caso particolare di onde, e supponendo $\Phi=\Phi(x)$, si definisce l'\textbf{equazione di D'Alembert}
+\begin{equation}
+\frac{\partial^2\Phi}{\partial x^2}-\frac{1}{c^2}\frac{\partial^2\Phi}{\partial t^2}=0 
+\nonumber
+\end{equation}
+che ammette soluzioni del tipo
+\begin{equation}
+   \Phi=f\left(t-\frac{x}{c}\right)+g\left(t+\frac{x}{c}\right)
+\nonumber 
+\end{equation}
+Le soluzioni delle equazioni di Maxwell sono: \\
+- campi statici;\\
+- onde e.m. che si propagano a velocità \emph{c}.
+\\\\
+Caratteristiche dell’onda sono:\\
+- Direzione di propagazione // x \\
+- E // y\\
+- B // z\\
+Le tre direzioni sono sempre ortogonali una all’altra.\\
+Tutte le onde elttromagnetiche hanno le seguenti caratteristiche:\\
+- \textbf{E}, \textbf{B} e la direzione di propagazione k formano una terna
+destra (onde trasversali);\\ 
+- \emph{E=cB}.\\
+L'onda piana è descritta da due equazioni del tipo:
+\begin{align*}
+\nabla^2\textbf{E}-\frac{1}{c^2}\frac{\partial^2\textbf{E}}{\partial t^2}&=0 & \nabla^2\textbf{B}-\frac{1}{c^2}\frac{\partial^2\textbf{B}}{\partial t^2}&=0   
+\nonumber
+\end{align*}
+Se i campi \textbf{E} e \textbf{B} sono costanti su tutti i punti di un piano, ad esempio il piano \emph{xy} in un sistema cartesiano, cioè:
+\begin{equation}
+    \frac{\partial\textbf{E}}{\partial x}=\frac{\partial\textbf{E}}{\partial y}=\frac{\partial\textbf{B}}{\partial x}=\frac{\partial\textbf{B}}{\partial y}
+    \nonumber
+\end{equation}
+si instuisce che i campi dipendono solo dalla coordinata \emph{z}.\\
+Dunque l’onda descritta da due equazioni del tipo:
+\begin{align*}
+    \frac{\partial^2\textbf{E}}{\partial x^2}-\frac{1}{c^2}\frac{\partial^2\textbf{E}}{\partial t^2}&=0 & \frac{\partial^2\textbf{B}}{\partial x^2}-\frac{1}{c^2}\frac{\partial^2\textbf{B}}{\partial t^2}&=0
+    \nonumber
+\end{align*}
+e che soddisfa alle condizioni sopra indicate è un’onda piana.\\\\
+Inoltre, sapendo che,  
+\begin{align*}
+\text{div}\textbf{E}&=0 & \text{div}\textbf{B}&=0
+\nonumber
+\end{align*}
+si determina che:
+\begin{equation}
+  \frac{\partial\textbf{E}_z}{\partial z}=\frac{\partial\textbf{B}_z}{\partial z}=0
+\nonumber
+\end{equation}
+Mentre, sapendo che,  
+\begin{align*}
+\left(\text{rot}\textbf{E}\right)_z&=-\frac{\partial\textbf{B}_z}{\partial t} & \left(\text{rot}\textbf{B}\right)_z&=\frac{\partial\textbf{E}_z}{\partial t}
+\nonumber
+\end{align*}
+si determina che:
+\begin{equation}
+\frac{\partial\textbf{E}_z}{\partial t}=\frac{\partial\textbf{B}_z}{\partial t}=0
+\nonumber
+\end{equation}
+Dunque $\textbf{E}_z $ e $\textbf{B}_z $ sono costanti rispetto a \emph{z} e \emph{t}: le componenti in direzione \emph{z} dei due campi non contribuiscono all'onda e possiamo assumerli uguali a zero. \\
+Si parla dunque di onda trasversale, con \textbf{E} e \textbf{B} sempre presenti contemporaneamente.
+
+\section*{C.12 - Onde piane}
+Un’onda e.m. interagisce con una carica q (e-, atomo, molecola) mediante la forza elettrica e la forza di Lorentz:
+L’interazione tra onda e materiale avviene attraverso le cariche presenti nel materiale ed è descritta da
+\begin{equation}
+    \textbf{F}=q(\textbf{E}+\textbf{\emph{v}}\times\textbf{B})
+    \nonumber
+\end{equation}
+Per un materiale lineare ed isotropo, la densità di energia è:
+\begin{equation}
+\begin{split}
+    u_{em} [J/m^3] &=\frac{1}{2}\textbf{D}\cdot\textbf{E}+\frac{1}{2}\textbf{B}\cdot\textbf{H} \\
+    &=\frac{1}{2}\varepsilon\textbf{E}^2+\frac{1}{2}\frac{\textbf{B}^2}{\mu}
+    \nonumber
+\end{split}
+\end{equation}
+L'espressione di $u_{em}$ è stata ottenuta in condizioni stazionarie e supposta valida anche per campi variabili. Per tutte le onde, l’energia è per metà associata ad \textbf{E} e per metà associata a \textbf{B}.\\
+\\
+La densità di potenza dissipata per effetto Joule è
+\begin{equation}
+    P_{\tau ,dissipata}[W] = \textbf{E}\cdot\textbf{j}
+    \nonumber
+\end{equation}
+quindi la potenza dissipata è data dalla formula:
+\begin{equation}
+    \begin{split}
+    P_{dissipata}[W/m^3] &= \iiint_\tau \textbf{E}\cdot\textbf{j}\emph{d}\tau \\
+    &= \int_\gamma \textbf{E}\cdot\emph{d\textbf{l}} \iint_S \textbf{j}\cdot\textbf{u}_n\emph{dS}
+    \nonumber
+    \end{split}
+\end{equation}
+\\
+Si definisce vettore di Poynting 
+\begin{equation}
+\textbf{S}[W/m^2] = \frac{\textbf{E} \times \textbf{B}}{\mu} = \textbf{E} \times \textbf{H}
+\end{equation}
+e inoltre vale che
+\begin{equation}
+\frac{\partial u_{em}}{\partial t} + \textbf{E} \cdot \textbf{j} = \text{div}\textbf{P}
+\nonumber
+\end{equation}
+quindi integrando su tutto il volume $\tau$ e applicando il teorema della divergenza al secondo membro si ottiene il seguente teorema.\\
+\\
+\textbf{Teorema di Poynting}\\
+La variazione di energia e.m. è dovuta alla dissipazione per effetto Joule e al flusso del vettore di Poynting (conservazione dell’energia, bilancio energetico), ossia
+\begin{equation}
+-\frac{\partial U_{em}}{\partial t} = P_{dissipata} + \Phi(\textbf{S})
+\end{equation}
+\textbf{N.B.:} Il flusso di P attraverso l’elemento di superficie \emph{dS} rappresenta l’energia e.m. che l’onda trasporta attraverso \emph{dS} nell’unità di tempo.\\
+\\
+Consideriamo il vettore di Poynting \textbf{P}:\\
+- Direzione e verso sono uguali a \textbf{k}, cioè la direzione e verso della
+propagazione dell’onda. Il flusso di energia e.m. è ortogonale sia ad \textbf{E} che a \textbf{B};\\
+- Modulo = Intensità istantanea dell’onda = Energia che il campo trasporta nell’unità di tempo attraverso l’unità di superficie ortogonale alla direzione di propagazione.\\
+\\
+L’onda piana sinusoidale (armonica) è descritta da una funzione del tipo:
+\begin{equation}
+\begin{split}
+\Phi (x-ct)&=\Phi_0 sin[k(x – ct)] \\
+&=\Phi_0 sin(kx - \omega t)
+\nonumber
+\end{split}
+\end{equation}
+con
+\begin{align*}
+\omega &=\frac{2\pi}{T} & k&=\frac{2\pi}{\lambda}
+\nonumber
+\end{align*}
+Si definiscono allora le seguenti grandezze:\\
+- Lunghezza d'onda $\lambda $; \\
+- Periodo $T=\frac{1}{\nu}=\frac{2\pi}{\omega}$;\\
+- Velocità di fase $c=\lambda \nu = \frac{\omega}{k}$;\\
+- Vettore d'onda \textbf{k}, con modulo $k=\frac{\omega}{c}= \frac{2\pi}{\lambda}$ e con direzione e verso dati dalla propagazione dell'onda.\\
+\\
+\textbf{N.B.:} Ogni onda può essere vista come una sovrapposizione di onde piane monocromatiche, attraverso l'analisi di Fourier. Per conoscere le caratteristiche di qualsiasi onda, basta studiare le proprietà delle onde armoniche e sovrapporre gli effetti.\\
+\\
+La polarizzazione delle onde piane viene definita rispetto al campo \textbf{E} (analogamente vale per \textbf{B}). Se un'onda piana sinusoidale si propaga in direzione \emph{z}, il campo \textbf{E} può essere espresso come:
+\begin{equation}
+\textbf{E}= E_x\textbf{u}_x + E_y\textbf{u}_y
+\nonumber
+\end{equation}
+con
+\begin{equation}
+E_x(P,t)=E_x(P) sin(\omega t + \phi_x)
+\nonumber
+\end{equation}
+\begin{equation}
+E_y(P,t)=E_y(P) sin(\omega t + \phi_y)
+\nonumber
+\end{equation}
+Dunque, $E_x$ e $E_y$ variano in fase e il campo \textbf{E} oscilla secondo una direzione costante.\\
+\\
+La polarizzazione è di tipo:\\
+- lineare, se $\phi_x=\phi_y + n\pi$ \\
+- in quadratura, se $\phi_x=\phi_y + (2n+1)\frac{\pi}{2}$ \\
+- circolare, se $E_x = E_y$ \\
+- ellittica, se $E_x \neq E_y$ \\
+- depolarizzata, se la direzione di \textbf{E} varia casualmente.\\
+\\
+Per un’onda piana sinusoidale che si propaga lungo \emph{z}, si ha che:\\
+- E=$E_ocos(\omega t - kz)$\\
+- B=$B_ocos(\omega t - kz)$\\
+- $E_o = vB_0$ \\
+- $\omega = kv$ \\
+\\
+Sapendo che $u_e=u_m=\frac{u_{em}}{2}$, si definisce la densità di energia di un'onda come:
+\begin{equation}
+\begin{split}
+u_{em}[J/m^3] &= \frac{1}{2} \varepsilon E^2 + \frac{B^2}{2\mu} \\
+&= \left(\frac{1}{2} \varepsilon E_0^2 + \frac{B_0^2}{2\mu}\right)cos^2(\omega t - kz) \\
+&= \varepsilon E_0^2cos^2(\omega t - kz)
+\end{split}
+\end{equation}
+tale che la densità media di energia è data da:
+\begin{equation}
+\Bar{u}_{em} = \frac{1}{2}\varepsilon E_0^2 = \frac{B_0^2}{2\mu}
+\end{equation}
+\\
+Si definisce l'intensità di un'onda come il modulo del vettore di Poynting:
+\begin{equation}
+\begin{split}
+I [W/m^2]&=|\textbf{S}| \\
+&=\frac{E_0B_0}{\mu}cos^2(\omega t - kz) \\
+&= \sqrt{\frac{\varepsilon}{\mu}}E_0^2cos^2(\omega t - kz) \\
+&= \frac{E_0^2}{v\mu}cos^2(\omega t - kz)
+\end{split}
+\end{equation}
+tale che l'intensità media di energia è data da:
+\begin{equation}
+\Bar{I} = \frac{1}{2}\sqrt{\frac{\varepsilon}{\mu}}E_0^2 = \frac{c}{n}\Bar{u}_{em} = v\Bar{u}_{em}
+\end{equation}
+con
+\begin{equation}
+\begin{split}
+n &= \sqrt{\varepsilon_r\mu_r} \\
+&= indice\ di\ rifrazione
+\nonumber
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+v &= \frac{c}{n} = \frac{1}{\sqrt{\varepsilon \mu}} \\
+&= velocità\ della\ luce\ nel\ mezzo
+\nonumber
+\end{split}
+\end{equation}
+\\
+Un’onda che investe la superficie di un mezzo esercita su di essa una forza. Si introduce allora la pressione di radiazione che corrisponde alla forza per unità di superficie esercitata da un’onda sulla superficie di un mezzo ortogonale alla sua direzione di propagazione.\\
+L’interazione tra onda e materiale avviene attraverso le cariche presenti nel materiale ed è descritta dalla Forza di Lorentz $\textbf{F}=q(\textbf{E}+\textbf{\emph{v}}\times\textbf{B})$ quindi la forza esercitata sull'unità di superficie è data da:
+\begin{equation}
+p_{em}[N/m^2]=\frac{d\textbf{F}}{dS}= \sigma(\textbf{E}+\textbf{\emph{v}}\times\textbf{B})
+\nonumber
+\end{equation}
+con $\sigma[C/m^2]=$ densità di carica superficiale nel mezzo.\\
+Il materiale assorbe dunque energia dall'onda, mettendo in moto gli $e^-$ del mezzo lungo la superficie con velocità \textbf{v}//\textbf{E}.\\
+La potenza assorbita per unità di superficie è:
+\begin{equation}
+\frac{d\textbf{F}}{dS}\cdot \textbf{v}
+= \frac{d\textbf{F}_e}{dS}\cdot \textbf{v}
+= \sigma Ev
+\nonumber
+\end{equation}
+e quindi l'intensità media assorbita dal mezzo è $\Bar{I}>=\sigma \Bar{E}\Bar{v}$.
+Per un’onda piana, la forza magnetica per unità di superficie è:
+\begin{equation}
+  \frac{d\textbf{F}_m}{dS}=\sigma \textbf{v}\times \textbf{B}=\frac{\sigma}{v}\Bar{E}\Bar{v}=\frac{\Bar{I}}{v}
+  \nonumber
+\end{equation}
+tale che gli $e^-$ in moto interagiscono con \textbf{B} subendo una forza diretta verso l’interno del materiale. Dunque l’onda esercita una pressione di radiazione data da:
+\begin{equation}
+    p_{em}=\frac{\Bar{I}}{v}
+    \nonumber
+\end{equation}
+In generale, con una trattazione simile a quella del teorema di Poynting, si trova l’espressione della quantità di moto intrinseca (per unità di volume) \textbf{g} dell’onda:
+\begin{equation}
+\textbf{g}[kg/m^2\cdot s]=\frac{\textbf{P}}{v^2}=\varepsilon \textbf{E} \times \textbf{B}
+\end{equation}
+Dunque per un onda piana che si propaga in un mezzo:
+\begin{equation}
+   \Bar{g}=\frac{\Bar{I}}{v^2}=\frac{\Bar{u}_{em}}{v} 
+\end{equation}
+Considerando un’onda piana che incide su una superficie
+perfettamente assorbente, tutta l’energia (e quindi la quantità di moto) viene assorbita dal mezzo. In un intervallo di tempo $\Delta t$, sulla superficie S incide la quantità di moto G:
+\begin{equation}
+\Bar{G}[kg\cdot m/s]=\Bar{g}Sv\Delta t
+\nonumber
+\end{equation}
+La forza media esercitata dalla superficie sull’onda S è $-F$ (uguale e contraria a quella che l’onda esercita sulla superficie. Per il teorema dell’impulso $\Bar{F}=\Bar{g}Sv$, quindi la pressione di radiazione è data dalla formula:
+\begin{equation}
+    p_{em}=\Bar{g}v
+    =\Bar{u}
+    =\frac{\Bar{I}}{v}
+    \nonumber
+\end{equation}
+Se la superficie è perfettamente riflettente, l’onda viene riflessa indietro, si inverte la direzione di propagazione, quindi la quantità di moto finale è uguale e contraria a quella iniziale. Dunque la forza esercitata è doppia $<F>=2<g>Sv$ e la pressione diventa:
+\begin{equation}
+    p_{em}=2\Bar{g}v
+    =2\Bar{u}=\frac{2\Bar{I}}{v}
+    \nonumber
+\end{equation}
+
+\section*{C.13 - Onde stazionarie ed effetto fotoelettrico}
+Si studia cosa succede quando un'onda piana incontra un conduttore perfetto.\\
+Sulla superficie di separazione del conduttore, valgono le condizioni al contorno per il campo e.m.:
+\begin{align*}
+[D_n]&=\sigma  & [E_t]&=0
+\nonumber
+\end{align*}
+\begin{align*}
+[B_n]&=0  & [H_t]&=j_s'
+\nonumber
+\end{align*}
+Un conduttore ideale risponde istantaneamente al campo elettrico dell’onda separando cariche in modo da annullare il campo all’interno ($\textbf{E}_{int}=0$ e $\textbf{B}_{int}=0$). L’onda non si propaga all’interno del conduttore. \\
+Per la conservazione dell’energia, quindi l’onda risulta
+totalmente riflessa. Quindi sulla superficie:
+\begin{align*}
+\textbf{E}&=0 & \textbf{E}_r &=-\textbf{E}_i
+\nonumber
+\end{align*}
+\begin{align*}
+\textbf{B}&=2\textbf{B}_i  & \textbf{B}_r &=\textbf{B}_i
+\nonumber
+\end{align*}
+dove, per un onda con direzione di propagazione //z, si ha
+\begin{equation}
+    E_i=E_0 sin(\omega t - kz)
+    \nonumber
+\end{equation}
+\begin{equation}
+    E_r=-E_0 sin(\omega t + kz)
+    \nonumber
+\end{equation}
+Dunque il modulo del campo elettrico totale \textbf{E} risulta:
+\begin{equation}
+E=E_i+E_r
+=-2E_0sin(kz)cos(\omega t)
+\nonumber
+\end{equation}
+E non dipende da ($\omega t ± kz$) e quindi non si propaga. Tutti i punti oscillano in fase con ampiezze diverse in funzione di \emph{z}. Si forma dunque un’onda stazionaria tale che \textbf{E} si annulla sulla superficie (piano nodale), mentre
+\begin{equation}
+    B=2B_0cos(kz)sin(\omega t)
+    \nonumber
+\end{equation}
+Anche \textbf{B} non si propaga nel conduttore. \\
+Però \textbf{B} ha un massimo sulla superficie (piano ventrale). Sulla superficie del conduttore si genera una densità di corrente superficiale $\textbf{j}_s$ diretta come $\textbf{E}_i$:
+\begin{equation}
+      \textbf{j}_s=\frac{[B_t]}{\mu}
+      =2\frac{B_i}{\mu}
+      \nonumber
+\end{equation}
+$\textbf{B}_i$ esercita una forza sulla corrente.
+Dall'equazione della forza di Lorentz, se il campo agisce su una
+distribuzione di carica superficiale, si ha che
+\begin{equation}
+    d\textbf{F}=dq\textbf{v} \times \textbf{B}_i 
+    =\sigma dS\textbf{v} \times \textbf{B}_i 
+    = \textbf{j}_s \times \textbf{B}_i dS
+    \nonumber
+\end{equation}
+Da cui si ottiene la misura della pressione e.m. come
+\begin{equation}
+\begin{split}
+     p_{em}&=\frac{d\textbf{F}}{dS}
+     =\textbf{j}_s \times \textbf{B}_i
+     =\left(\frac{2}{\mu}\textbf{u}_n\times \textbf{B}_i\right)\times\textbf{B}_i\\
+     &=2\frac{\textbf{E}_i}{c\mu}\times \textbf{B}_i
+     =2\frac{\textbf{P}_i}{c}
+     \nonumber
+\end{split}
+\end{equation}
+in accordo con quanto visto per un’onda piana che incide su una superficie perfettamente riflettente.\\
+Si sa che la pressione di radiazione si ottiene anche associando all’onda una densità di quantità di moto pari a $\textbf{g}=\frac{\textbf{P}}{c^2}$, perciò si ricava la quantità di moto su un’area $dS$ del conduttore in un intervallo di tempo $dt$ è quella contenuta in un volume $cdtdS$, ossia tale che:
+\begin{equation}
+    \textbf{G}=\textbf{g}cdtdS
+    =\frac{\textbf{P}_i}{c^2}cdtdS
+    \nonumber
+\end{equation}
+e poichè l’onda viene totalmente riflessa si ha una
+variazione di quantità di moto pari a 
+\begin{equation}
+    d\textbf{G}=2\frac{\textbf{P}_i}{c}dtdS
+    \nonumber
+\end{equation}
+e quindi si ha una pressione e.m. data da
+\begin{equation}
+     p_{em}=\frac{d\textbf{F}}{dS}
+     =\frac{d\textbf{G}}{dtdS}
+     =2\frac{\textbf{P}_i}{c}
+     \nonumber
+\end{equation}
+Si dimostra quindi in modo indiretto che a un’onda elettromagnetica è associato un trasporto di energia e di quantità di moto.
+Questa proprietà costituisce la base della teoria corpuscolare e della meccanica quantistica.\\
+\\
+Dalle precedenti osservazioni, a un’onda e.m. sono associate:\\
+- densità di energia $u_{em}=\frac{|\textbf{P}|}{c}$\\
+- densità di quantità di moto $\textbf{g}=\frac{\textbf{P}}{c^2}$\\
+\\
+Per questo motivo la teoria corpuscolare interpreta le onde e.m. come costituite da un insieme di particelle uguali, i fotoni, ciascuna con:\\
+- energia $E=h \nu =$\(\hbar\)$\omega$\\
+- quantità di moto $|\textbf{G}|=\frac{hv}{c}$\\
+con $h= costante\ di\ Planck=6.6\cdot10^{-34}Js$.\\
+Mettendo insieme queste due formule si ottiene la \textbf{relazione di Einstein}
+\begin{equation}
+    E=mc^2
+    \nonumber
+\end{equation}
+\\
+Dimostrando l’effetto fotoelettrico, ha dato la conferma sperimentale della teoria corpuscolare.\\
+Infatti si osserva che:\\
+- Imponendo tra un anodo A e un catodo C una differenza di potenziale $\Delta V$, si osserva una corrente $i$ se C è illuminata con luce a frequenza $\nu > \nu_0$.\\
+- Al crescere di $\Delta V$, la corrente tende ad un valore di saturazione $i_{sat}$ , che cresce con l’intensità $I$ della luce.\\
+- A pari $\Delta V$, il valore della corrente è proporzionale all’intensità: $i \propto I$.\\
+\\
+Cambiando segno a $\Delta V$ è possibile determinare il valore $-\Delta V_0$ per cui la corrente si annulla. Questa valore, detto potenziale di arresto, corrisponde all’energia cinetica massima $E_{c,max}$ degli elettroni. La condizione $\Delta V=-\Delta V_0$ corrisponde all’emissione degli elettroni con $E_c=E_{c,max}=e\Delta V_0$, che arrivano $E_c=0$ con all’anodo.\\
+\\
+Sperimentalmente si osserva che:\\
+- $E_{c,max}$ (quindi $\Delta V_0$) è indipendente da $I$\\
+- $E_{c,max}$ (quindi $\Delta V_0$) cresce con la frequenza $\nu$ della luce. Esiste un valore di soglia $\nu_0$ caratteristico del materiale.\\
+\\
+In termini ondulatori non si spiega:\\
+- l’esistenza di una soglia dipendente dalla frequenza e non dall’intensità.\\
+- il fatto che $\Delta V_0$ non dipenda da $I$. Se è l’interazione con il campo elettrico che estrae gli elettroni, una maggiore intensità dovrebbe aumentare il potenziale di arresto.\\
+\\
+\textbf{N.B.:} La soglia esiste perchè c’è un’energia minima (corrispondente al lavoro di estrazione $L_{est}$) che deve essere fornita perchè l’elettrone venga emesso.\\
+Anche $\Delta V_0$ dipende dall’energia ceduta dall’onda e.m. al catodo (energia in eccesso rispetto ad $L_{est}$)\\
+$\rightarrow$ Nella descrizione ondulatoria, l’interazione è tra onda ed elettrone e ci si aspetta una dipendenza della soglia e di $\Delta V_0$ da $I$ (energia per unità di area e tempo).\\
+$\rightarrow$ Nella descrizione corpuscolare, l’interazione è tra
+singolo fotone ed elettrone e la dipendenza è prevista per
+l’energia del singolo fotone, cioè per $\nu$.\\
+\\
+La spiegazione venne data da Einstein nel 1905, in termini di comportamento corpuscolare della luce.\\
+E’ l’interazione del singolo fotone del’onda con il singolo elettrone del catodo, che determina il fenomeno.
+Dal bilancio energetico si ha che
+\begin{equation}
+    L_{est} + E_{c,max}=h\nu \ \  \rightarrow \ \  E_{c,max}= h\nu - L_{est}
+    \nonumber
+\end{equation}
+e sapendo che $E_{c,max}=e\Delta V_0$, allora si ottiene
+\begin{equation}
+    \Delta V_0=\frac{h}{e}\nu - \frac{L_{est}}{e}
+    \nonumber
+\end{equation}
+Si spiega la dipendenza lineare di $\Delta V_0$ da $\nu$.
+Inoltre, si giustifica l’esistenza di una soglia di frequenza $\nu_0=\frac{L_{est}}{h}$ (quando $E_{c,max}=0$, ossia quando $\Delta V_0=0$) che è caratteristica del metallo del catodo.\\
+
+\section*{C.14 - Potenziali del campo elettromagnetico}
+Dalla definizione del potenziale vettore A e dalle equazioni di Maxwell si sa che
+\begin{equation}
+\textbf{B}=\text{rot}\textbf{A}
+\nonumber
+\end{equation}
+\begin{equation}
+\text{rot}\textbf{E}=-\frac{\partial \textbf{B}}{\partial t}
+\nonumber
+\end{equation}
+da cui si ottiene che:
+\begin{equation}
+\text{rot}\left(\textbf{E}+\frac{\partial \textbf{A}}{\partial t}\right)=0
+\nonumber
+\end{equation}
+Perciò esiste una funzione scalare (potenziale scalare) $V$ tale che:
+\begin{equation}
+\textbf{E}+\frac{\partial \textbf{A}}{\partial t}=-\text{grad}V
+\nonumber
+\end{equation}
+Quindi è possibile definire il campo \textbf{E} attraverso il
+potenziale vettore \textbf{A} e il potenziale scalare $V$:
+\begin{equation}
+\textbf{E}=-\frac{\partial \textbf{A}}{\partial t}-\text{grad}V
+\nonumber
+\end{equation}
+\textbf{N.B.:} Per definire i due potenziali sono state utilizzate
+due equazioni di Maxwell:
+\begin{align*}
+\text{div}\textbf{B}&=0  &  \text{rot}\textbf{E}&=-\frac{\partial\textbf{B}}{\partial t}
+\nonumber
+\end{align*}
+Quindi in tali definizioni sono implicite le proprietà
+espresse dalle due equazioni.\\
+\\
+Come nel caso stazionario, per il campo \textbf{A} è fissato il rotore, ma non la divergenza. Esiste cioè una famiglia di vettori che soddisfa alla condizione \textbf{B} = rot \textbf{A}, dati da
+\begin{equation}
+\textbf{A'}=\textbf{A}+\text{grad}\psi
+\nonumber
+\end{equation}
+Questa caratteristica di \textbf{A} si riflette su $V$, tale che:
+\begin{equation}
+V'=V-\frac{\partial \psi}{\partial t}
+\nonumber
+\end{equation}
+\\
+Le due relazioni che stabiliscono le possibili famiglie di potenziali vettore e scalare si definiscono “condizioni di compatibilità” o “gauge conditions”.
+\begin{equation}
+\textbf{A'}=\textbf{A}+\text{grad}\psi
+\nonumber
+\end{equation}
+\begin{equation}
+V'=V-\frac{\partial \psi}{\partial t}
+\nonumber
+\end{equation}
+I potenziali che soddisfano tali relazioni, danno origine agli stessi campi \textbf{B} e \textbf{E}.\\ A seconda della situazione fisica da descrivere è possibile, scegliendo opportunamente la funzione $\psi$, ricavare la forma analitica dei potenziali più adeguata al problema.\\
+\\
+Perchè sono utili i potenziali del campo e.m.?\\
+- Tutti i fenomeni macroscopici (eccetto quelli gravitazionali) sono di natura e.m., ed è importante saper determinare il campo e.m. nelle diverse situazioni.\\
+-Le eq. di Maxwell sono molto potenti, ma possono essere difficili da integrare.\\
+- Una famiglia di infiniti potenziali \textbf{A} e $V$ corrispondono allo stesso campo e.m. ed è possibile scegliere la coppia (\textbf{A}, $V$) (cioè la
+funzione $\psi$) che semplifica il calcolo.\\
+\\
+\textbf{Condizione di Coulomb}\\
+Siccome $\text{div}\textbf{A}=0$, la funzione $\psi$ deve soddisfare l’equazione di Laplace:
+\begin{equation}
+\nabla^2\psi=0
+\nonumber
+\end{equation}
+con condizioni al contorno definite da $\textbf{A'}=\textbf{A}$ e $V'=V$, quindi con $\psi=cost$.\\
+\\
+\textbf{Condizione di Coulomb (o Maxwell)}\\
+Sapendo che $\text{div}\textbf{A}+\mu_0\varepsilon_0\frac{\partial V}{\partial t}=0$, si ha per la funzione $\psi$ che
+\begin{equation}
+\nabla^2\psi=-\mu_0\varepsilon_0\frac{\partial \psi}{\partial t}=0
+\nonumber
+\end{equation}
+con $\psi$ soluzione della equazione delle onde.\\
+Inoltre, per le eq. di Maxwell della $div\textbf{E}$ e del $rot\textbf{B}$, conoscendo le relazioni di \textbf{E} e \textbf{B} con i rispettivi campi, e usando le proprietà degli operatori
+\begin{equation}
+\nabla^2\textbf{A}=\text{grad}\ \text{div}\textbf{A}-\text{rot}\ \text{rot}\textbf{A}
+\nonumber
+\end{equation}
+\begin{equation}
+\nabla^2V=\text{div}\ \text{grad}V
+\nonumber
+\end{equation}
+si ottiene che:
+\begin{equation}
+\nabla^2\textbf{A}-\frac{1}{c^2}\frac{\partial^2\textbf{A}}{\partial t^2}=-\mu_0\textbf{j}
+\nonumber
+\end{equation}
+\begin{equation}
+\nabla^2V-\frac{1}{c^2}\frac{\partial^2V}{\partial t^2}=-\frac{\rho}{\varepsilon_0}
+\nonumber
+\end{equation}
+che, in assenza di sorgenti, definiscono l’equazione delle onde.\\
+Infatti, nel caso $\rho=0$, per l'invarianza di gauge e per la condizione di Lorentz, scegliendo $V'=-\frac{\partial \psi}{\partial t}$, ossia $V=0$, si ottiene che:
+\begin{equation}
+\textbf{B}=\text{rot}\textbf{A}
+\nonumber
+\end{equation}
+\begin{equation}
+\textbf{E}=-\frac{\partial \textbf{A}}{\partial t}
+\nonumber
+\end{equation}
+Il campo elettromagnetico dunque può essere descritto solo con il potenziale vettore \textbf{A}.
+
+\section*{C.15 - Onde sferiche}
+Si considera l’equazione per il potenziale scalare nello spazio libero in assenza di sorgenti
+\begin{equation}
+\nabla^2V-\frac{1}{c^2}\frac{\partial^2V}{\partial t^2}=0
+\nonumber
+\end{equation}
+e si studiano le soluzioni con simmetria sferica, che dipendono solo dalla distanza da un punto O. In cordinate sferiche si ha:
+\begin{equation}
+\frac{\partial^2}{\partial r^2} (rV) -\frac{1}{c^2} \frac{\partial^2}{\partial t^2}(rV)=0
+\nonumber
+\end{equation}
+Per $r\neq0$, questa è l’equazione di D’Alembert per la funzione $rV$, da cui si ottiene che:
+\begin{equation}
+V=\frac{1}{r}f\left(t-\frac{r}{c}\right)+\frac{1}{r}g\left(t-\frac{r}{c}\right)
+\nonumber
+\end{equation}
+Come nel caso delle onde piane, la soluzione è data da un’onda progressiva e una regressiva, ma in questo caso l’intensità decresce con la distanza dal punto O.\\
+Questa soluzione vale per $r\neq0$. Infatti
+\begin{equation}
+\lim_{r\to\infty} V = \infty
+\nonumber
+\end{equation}
+in accordo con la possibilità che ci sia una carica
+(sorgente) in O.\\
+Questa è anche soluzione dell’equazione inomogenea se la carica è contenuta in un volume infinitesimo centrato attorno ad O.\\
+\\
+Dalle eq. per i potenziali con la condizione di Lorentz si cerca una soluzione nel caso di una carica puntiforme posta in O.\\
+\textbf{N.B.:} E’ un’idealizzazione (per la conservazione della carica, una carica puntiforme non può variare nel tempo), ma è utile perché consente di descrivere qualunque distribuzione di carica con la sovrapposizione degli effetti.
+\begin{equation}
+\nabla ^2 V-\frac{1}{c^2}\frac{\partial ^2 V}{\partial  t^2}=-\frac{1}{\varepsilon_0}Q(t)\delta (\textbf{r})
+\nonumber
+\end{equation}
+Integrando su una sfera di raggio R, centrata in O, e usando il teorema della divergenza si ottiene che:
+\begin{equation}
+\begin{split}
+    \iiint_{\tau}\nabla^2Vd\tau-\frac{1}{c^2}\iiint_{\tau}\frac{\partial^2V}{\partial t^2} &= -\frac{1}{\varepsilon_0}\iiint_{\tau}Q(t)\delta (\textbf{r}) \\
+    \iiint_{\tau}div\ gradVd\tau-\frac{1}{c^2}\iiint_{\tau}\frac{\partial^2V}{\partial t^2} &= -\frac{1}{\varepsilon_0}\iiint_{\tau}Q(t)\delta (\textbf{r}) \\
+    \iint_{\Sigma} gradV \cdot \textbf{u}_ndS- \frac{1}{c^2} \iiint_{\tau} \frac{\partial^2V}{\partial t^2} &= -\frac{1}{\varepsilon_0}\iiint_{\tau}Q(t)\delta (\textbf{r})
+    \nonumber
+\end{split}
+\end{equation}
+La sorgente ha simmetria sferica, quindi la soluzione avrà la stessa simmetria, infatti si ha che
+\begin{equation}
+\text{grad}V \cdot\textbf{u}_n= \frac{\partial V}{\partial r}
+\nonumber
+\end{equation}
+e sarà costante sulla superficie sferica $\Sigma$. Quindi si ha che:
+\begin{equation}
+    \Big|\frac{\partial V}{\partial r}\Big|_{r=R}\cdot 4\pi R^2-\frac{1}{c^2} \int_0 ^R \frac{\partial^2V}{\partial t^2} 4\pi r^2dr= -\frac{Q(t)}{\varepsilon_0}
+    \nonumber
+\end{equation}
+che ha una soluzione del tipo
+\begin{equation}
+    V=\frac{1}{r}f\left(t-\frac{r}{c}\right)
+    \nonumber
+\end{equation}
+Definita $\xi=t-\frac{r}{c}$, si riscrive l'espressione precedente come 
+\begin{equation}
+    \Big|-\frac{1}{cr}\frac{\partial f(\xi)}{\partial \xi}- \frac{1}{r^2}\Big|_{r=R}\cdot 4\pi R^2-\frac{1}{c^2} \int_0 ^R \frac{\partial^2f(\xi)}{\partial \xi^2} 4\pi r^2dr= -\frac{Q(t)}{\varepsilon_0}
+    \nonumber
+\end{equation}
+quindi per $r\to0$, resta
+\begin{equation}
+    -4\pi f(t)= -\frac{Q(t)}{\varepsilon_0}
+    \nonumber
+\end{equation}
+e dunque la $f$ è soluzione dell’equazione nella forma:
+\begin{equation}
+    f\left(t-\frac{r}{c}\right)=\frac{Q\left(t-\frac{r}{c}\right)}{4 \pi \varepsilon_0}
+    \nonumber
+\end{equation}
+Pertanto il potenziale $V$ risulta
+\begin{equation}
+\begin{split}
+    V(r,t)&=\frac{1}{4 \pi \varepsilon_0} \frac{Q\left(t-\frac{r}{c}\right)}{r} \\
+    &=\frac{1}{4 \pi \varepsilon_0}\iiint_\tau \frac{\rho \left(t-\frac{r}{c}\right)}{r}d\tau
+    \nonumber
+\end{split}
+\end{equation}
+Ripetendo lo stesso procedimento per le componenti del potenziale vettore \textbf{A}, si ottiene:
+\begin{equation}
+    \textbf{A}(r,t)=\frac{\mu_0}{4 \pi}\iiint_\tau \frac{\textbf{j} \left(t-\frac{r}{c}\right)}{r}d\tau
+    \nonumber
+\end{equation}
+I due potenziali ricavati prendono il nome di potenziali ritardati. \\ 
+Tali espressioni mettono in evidenza l’effetto del valore finito della velocità di propagazione delle onde elettromagnetiche:
+una variazione nel tempo della densità di carica o della densità di corrente in $r=0$ viene avvertita a distanza $r$ con un ritardo temporale pari al tempo impiegato dalla luce a percorrere la distanza $r$.\\
+Nota la distribuzione spazio-temporale delle sorgenti ($\rho$ e $\textbf{j}$), è possibile risalire a V e ad \textbf{A}.\\
+\\
+\textbf{N.B.:} Anche l’onda regressiva è soluzione e porta ad un potenziale anticipato, ma non ha un significato fisico.
+
+\section*{C.16 - Riflessione e rifrazione}
+Si introduce il metodo simbolico per una rappresentazione complessa di ogni funzione che varia sinusoidalmente nel tempo:
+\begin{equation}
+    f=f_0\sin(\omega t) \Leftrightarrow f=f_0e^{i\omega t}
+    \nonumber
+\end{equation}
+Per esempio, per il campo elettrico \textbf{E} vale che 
+\begin{equation}
+    \textbf{E}=\textbf{E}_0\sin(\omega t-kz)= \textbf{E}_0e^{i(\omega t-kz)}=\textbf{E}_0e^{i\omega t}e^{-ikz}
+    \nonumber
+\end{equation}
+Dunque, considerando un'onda piana incidente sulla superficie di separazione tra due mezzi dielettrici 1 e 2, si ha che:
+\begin{equation}
+\begin{split}
+    \textbf{E}_{iniziale}&=\textbf{E}_{0,i}e^{i(\omega_i t-\textbf{k}_i\cdot\textbf{r})} \\
+    \textbf{B}_{iniziale}&=\textbf{B}_{0,i}e^{i(\omega_i t-\textbf{k}_i\cdot\textbf{r})}=\frac{\textbf{u}_i\times\textbf{E}_i}{v_1}=\mu_1\textbf{H}_i \\
+    \textbf{E}_{riflessa}&=\textbf{E}_{0,r}e^{i(\omega_r t-\textbf{k}_r\cdot\textbf{r})} \\
+    \textbf{B}_{riflessa}&=\textbf{B}_{0,r}e^{i(\omega_r t-\textbf{k}_r\cdot\textbf{r})}=\frac{\textbf{u}_r\times\textbf{E}_r}{v_1}=\mu_1\textbf{H}_r \\
+    \textbf{E}_{rifratta}&=\textbf{E}_{0,t}e^{i(\omega_t t-\textbf{k}_t\cdot\textbf{r})} \\
+    \textbf{B}_{rifratta}&=\textbf{B}_{0,t}e^{i(\omega_t t-\textbf{k}_t\cdot\textbf{r})}=\frac{\textbf{u}_t\times\textbf{E}_t}{v_2}=\mu_2\textbf{H}_t
+    \nonumber
+\end{split}
+\end{equation}
+con $\textbf{u}_n\codt=0$ e $\textbf{u}_*= \frac{\textbf{k}_*}{|k_*|}$. \\
+Suppendendo che sulla superficie vale $\sigma =0$ e $\textbf{j}_s=0$, per le condizioni al contorno per \textbf{E}, \textbf{H}, \textbf{D} e \textbf{B} si ottengono le seguenti relazioni, che prendono il nome di \textbf{relazioni di Fresnel}:
+\begin{equation}
+\begin{split}
+    \textbf{u}_n\times(\textbf{E}_i+\textbf{E}_r)&= \textbf{u}_n\times\textbf{E}_t \\
+    \textbf{u}_n\times(\textbf{H}_i+\textbf{H}_r)&= \textbf{u}_n\times\textbf{H}_t \\
+    \textbf{u}_n\cdot(\varepsilon_1\textbf{E}_i + \varepsilon_1\textbf{E}_r) &= \textbf{u}_n\cdot \varepsilon_2 \textbf{E}_t \\
+    \textbf{u}_n\cdot(\mu_1\textbf{H}_i+\mu_1\textbf{H}_r)&= \textbf{u}_n\cdot \mu_2\textbf{H}_t
+    \nonumber
+\end{split}
+\end{equation}
+con $\varepsilon_r=n^2$ e $\mu_r \approx 1$.\\
+Queste condizioni sono soddisfatte eguagliando tra di loro gli esponenti e le ampiezze dei campi:\\
+- per la conservazione dell'energia
+\begin{equation}
+    \omega_i=\omega_r=\omega_t
+    \nonumber
+\end{equation}
+- per la conservazione della quanità di moto (Legge di Snell)
+\begin{equation}
+    \textbf{k}_i\cdot \textbf{r}=\textbf{k}_r\cdot \textbf{r}=\textbf{k}_t\cdot \textbf{r}
+    \nonumber
+\end{equation}
+Si studia la direzione di propagazione dell'onda: i vettori d'onda risultano complanari, infatti si definisce piano di incidenza il piano che contiene i vettori d'onda, normale alla superficie di separazione.\\
+Essendo che 
+\begin{align*}
+    |\textbf{k}_i|&=\frac{\omega}{v_1} & 
+    |\textbf{k}_r|&=\frac{\omega}{v_1} &
+    |\textbf{k}_t|&=\frac{\omega}{v_2} 
+\end{align*}
+allora si ottiene la \textbf{I legge di Snell} della riflessione:
+\begin{equation}
+    \frac{\omega}{v_1}\sin\theta_i=\frac{\omega}{v_1}\sin\theta_r \Rightarrow \theta_i=\theta_r
+    \nonumber
+\end{equation}
+secondo la quale l’angolo di riflessione è uguale all'angolo di incidenza; e si ottiene la \textbf{II legge di Snell} della rifrazione:
+\begin{equation}
+    \frac{\omega}{v_1}\sin\theta_i=\frac{\omega}{v_2}\sin\theta_t \Rightarrow \frac{\sin\theta_i}{\sin\theta_r}=\frac{v_1}{v_2}=\frac{n_2}{n_1}
+    \nonumber
+\end{equation}
+L’origine della rifrazione è la diversa velocità nei due mezzi, mentre la frequenza deve rimanere la stessa (tutti gli oscillatori mantengono la frequenza della forzante).\\
+Perchè i punti della superficie di separazione vedano la stessa frequenza da tutte e due le parti della superficie, la distanza tra due creste ($=\lambda$) lungo la superficie deve essere la stessa in tutti e due i mezzi.
+\begin{equation}
+    \nu_1=\frac{c}{n_1\lambda_1}=\nu_2=\frac{c}{n_2\lambda_2} \Rightarrow \frac{\lambda_1}{\lambda_2}=\frac{n_2}{n_1}
+    \nonumber
+\end{equation}
+Questo è possibile solo se cambia la direzione di propagazione.\\
+\\
+Se l’onda incidente è piana, sia l’onda riflessa che quella
+rifratta sono piane.\\
+Se l’onda incidente è sferica, quella riflessa lo è, mentre quella rifratta no.\\
+Per la diversa velocità nei due mezzi, il fronte d’onda si deforma.\\
+\\
+Si studia ora l'ampiezza delle onde. Si scompone il campo \textbf{E} in una componente parallela $\textbf{E}_p$ e in una normale $\textbf{E}_n$ al piano di incidenza.\\
+Si suppone $\textbf{E}=\textbf{E}_n$, quindi dalla relazione di Fresnel e dalle leggi di Snell si ottiene che 
+\begin{equation}
+\begin{split}
+    E_{n,r}&=-\frac{\sin(\theta_i-\theta_t)}{\sin(\theta_i+\theta_t)}E_{n,i} \\
+    E_{n,t}&=\frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_i+\theta_t)}E_{n,i}
+    \nonumber
+\end{split}
+\end{equation}
+Si suppone $\textbf{E}=\textbf{E}_p$, quindi dalla relazione di Fresnel e dalle leggi di Snell si ottiene che 
+\begin{equation}
+\begin{split}
+    E_{p,r}&=\frac{\tg(\theta_i-\theta_t)}{\tg(\theta_i+\theta_t)}E_{p,i} \\
+    E_{p,t}&=\frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_i+\theta_t)\cos(\theta_i-\theta_t)}E_{p,i}
+    \nonumber
+\end{split}
+\end{equation}
+Allora si osserva che:\\
+- $E_{n,r}=0$ se $\theta_i=\theta_t$, ossia se $n_1=n_2$;\\
+- $E_{p,r}=0$ se $\theta_i+\theta_t=\frac{\pi}{2}$, ossia se $n_1 \sin\theta_i = n_2\cos \theta_i$, cioè $\text{tg} \theta_B =\frac{n_2}{n_1}$ (se la condizione è soddisfatta $\theta_i = \theta_B$ prende il nome di angolo di Brewster).\\
+\\
+\textbf{N.B.:} Un’onda polarizzata linearmente con $\textbf{E}=\textbf{E}_p$, che incide all’angolo di Brewster, non ha componente riflessa, quindi le perdite per trasmissione sono minime.\\
+Invece, un’onda depolarizzata che incide all’angolo di Brewster, ha l’onda riflessa polarizzata linearmente (perpendicolare al piano di incidenza).\\
+\\
+Passando da un mezzo ad un altro con indice di rifrazione minore ($n_1 > n_2$), esiste un angolo di incidenza detto angolo limite $\theta_l$ per cui non c’è onda trasmessa:
+\begin{equation}
+    \theta_t=\frac{\pi}{2} \Rightarrow \sin\theta_l=\frac{n_2}{n_1}
+    \nonumber
+\end{equation}
+Per angoli di incidenza maggiori o uguali dell’angolo limite non c’è trasmissione dell’onda.\\
+\\
+Sapendo che 
+\begin{equation}
+    \bar{I}= v\Bar{u}_{em}= \left(\frac{1}{2}\varepsilon E^2\right)v = \frac{1}{2}\varepsilon_0 n^2E^2 \frac{c}{n} = \frac{1}{2}\varepsilon_0ncE^2
+\nonumber  
+\end{equation}
+si definiscono le grandezze riflettanza $R$ e trasmittanza $T$ come
+\begin{equation}
+\begin{split}
+     R &=\frac{I_r}{I_i}=\frac{E_r^2}{E_i^2} \\
+     T &=\frac{I_t}{I_i}=\frac{n_2\cos\theta_t}{n_1\cos\theta_i} \frac{E_t^2}{E_i^2}
+     \nonumber
+\end{split} 
+\end{equation}
+tali che 
+\begin{equation}
+\begin{split}
+     R_n &=\left[\frac{n_1\cos\theta_i - n_2cos\theta_t}{n_1\cos\theta_i + n_2\cos\theta_t}\right]^2 = \frac{\sin^2(\theta_i-\theta_t)}{\sin^2(\theta_i+\theta_t)} \\
+     T_n &=\frac{n_2\cos\theta_t}{n_1\cos\theta_i} \left[\frac{2n_1\cos\theta_i}{n_1\cos\theta_i + n_2cos\theta_t}\right]^2 = \frac{\sin(2\theta_i) \sin(2\theta_t)}{\sin^2(\theta_i+\theta_t)} \\
+     R_p &=\left[\frac{n_2\cos\theta_i - n_1cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}\right]^2 = \frac{\text{tg} ^2(\theta_i-\theta_t)}{\text{tg}^2(\theta_i+\theta_t)} \\
+     T_p &=\frac{n_2\cos\theta_t}{n_1\cos\theta_i} \left[\frac{2n_1\cos\theta_i}{n_2\cos\theta_i + n_1cos\theta_t}\right]^2 = \frac{\sin(2\theta_i) \sin(2\theta_t)}{\sin^2(\theta_i+\theta_t) \cos^2(\theta_i-\theta_t)}
+     \nonumber
+\end{split} 
+\end{equation}
+Infatti $R$ e $T$ esprimono la percentuale di energia riflessa e trasmessa.
+In accordo con la conservazione dell’energia:
+\begin{equation}
+    R+T=1
+    \nonumber
+\end{equation}
+\\
+Per incidenza normale, ossia con $\theta_i=\theta_t=0$ si ha 
+\begin{equation}
+\begin{split}
+    R_n &=R_p=\left(\frac{n_1-n_2}{n_1+n_2} \right)^2 \\
+    T_n &=T_p=\frac{4n_1n_2}{(n_1+n_2)^2}
+    \nonumber
+\end{split}
+\end{equation}
+\textbf{N.B.:} Se $\theta_i=0$, scambiando $n_1$ ed $n_2$, $R$ e $T$ non cambiano.\\
+Inoltre $\textbf{E}_t$ ed $\textbf{E}_i$ hanno sempre lo stesso segno, mentre $\textbf{E}_r$ può avere segno opposto ad $\textbf{E}_i$, infatti:
+\begin{equation}
+\begin{split}
+    \frac{E_t}{E_i}&>0\ \text{per}\ n_1<n_2\ \text{e}\ n_1>n_2 \\
+    \frac{E_r}{E_i}&>0\ \text{per}\ n_1>n_2 \\
+    \frac{E_r}{E_i}&>0\ \text{per}\ n_1<n_2
+    \nonumber
+\end{split}
+\end{equation}
+Si osserva che $\textbf{E}_i$ si sfasa di $\pi$ quando viene riflesso da un’interfaccia con un mezzo più rifrangente.\\
+Per dimostrarlo si usano:\\
+- la condizione al contorno per $\textbf{E}_{tg}$ (con $\textbf{E}=\textbf{E}_{tg}$) nel passaggio da un mezzo all’altro;\\
+- la conservazione dell’energia (o dell’intensità) prima e dopo l’incidenza sulla superficie di separazione.\\
+\begin{equation}
+\begin{cases}
+    E_i + E_r = E_t \\
+    n_1E_i^2=n_1E_r^2+n_2E_t^2\ \ \  \text{dove}\ I=\frac{1}{2}\varepsilon_0ncE^2
+    \nonumber
+\end{cases}
+\end{equation}
+\begin{align*}
+    E_r &=\frac{n_1-n_2}{n_1+n_2}E_i & E_t &=\frac{2n_1}{n_1+n_2}E_i
+    \nonumber
+\end{align*}
+\textbf{N.B.:} per incidenza normale dal vuoto sulla superficie di un conduttore ideale, dove l’indice di rifrazione è puramente immaginario si ha che l’onda è totalmente riflessa ($R=1$).
+
+\section*{C.17 - Interferenza}
+Consideriamo due onde piane con $\omega_1=\omega_2=\omega$ che si propagano nello stesso mezzo ($k_1 = k_2$), di equazione
+\begin{equation}
+\begin{split}
+    E_1&= E_{0,1}e^{i(\omega_i t-\textbf{k}_i\cdot\textbf{r}_1-\varphi_1)}= E_{0,1}e^{i\omega t}e^{-i\phi_1}\\
+    E_2&= E_{0,2}e^{i(\omega_i t-\textbf{k}_i\cdot\textbf{r}_2-\varphi_2)}= E_{0,2}e^{i\omega t}e^{-i\phi_2}
+\end{split}   
+\end{equation}
+con $\phi=\textbf{k}\cdot\textbf{r}+\varphi$.\\
+Il campo totale risulta dunque
+\begin{equation}
+    \textbf{E}=\textbf{E}_1+\textbf{E}_2
+    \nonumber
+\end{equation}
+e la sua intensità
+\begin{equation}
+    I\propto|\textbf{E}_1+\textbf{E}_2|^2= E_{0,1}^2+E_{0,2}^2+2E_{0,1}E_{0,2}\cos(\phi_2-\phi_1)
+\end{equation}
+Se $(\phi_2 – \phi_1)=cost$ nel tempo in ogni punto, le sorgenti sono coerenti:\\
+- l’intensità è modulata dalla fase (interferenza), che
+varia con la posizione;\\
+- l’intensità totale è proporzionale al modulo quadro della
+somma dei campi\\
+Se $(\phi_2 – \phi_1)\neq cost$, le sorgenti sono incoerenti:\\
+- l’intensità totale è uguale alla somma delle intensità
+ed indipendente dalla posizione.\\
+\\
+L’interferenza si osserva per tutte le grandezze che si propagano per onde (con trattazione matematica indipendente dal tipo di onda).
+Essa è la prova della natura ondulatoria di una grandezza.\\
+Consideriamo due sorgenti coerenti (ad esempio due sorgenti puntiformi di onde sferiche)
+\begin{equation}
+\begin{split}
+    \xi_1&=\xi_{0,1}\sin(\omega t-kr_1) \ \text{con}\ \phi_1=kr_1+\varphi_1 \\
+    \xi_2&=\xi_{0,2}\sin(\omega t-kr_2) \ \text{con}\ \phi_2=kr_2+\varphi_2
+    \nonumber
+\end{split} 
+\end{equation}
+se esse hanno uguale frequenza e uguale stato di polarizzazione, allora si può parlare di interferenza.\\
+Si definisce la differenza di fase come
+\begin{equation}
+    \delta=\phi_2-\phi_1=k_2r_2-k_1r_1=\frac{2\pi}{\lambda_0}(n_2r_2-n_1r_1)
+    \nonumber
+\end{equation}
+e il cammino ottico, ossia il prodotto del cammino geometrico per l'indice di rifrazione come
+\begin{equation}
+    \xi=\xi_1+\xi_2=\xi_0\sin(\omega t+\alpha)
+    \nonumber
+\end{equation}
+con $\xi_0=\sqrt{\xi_{0,1}^2+\xi_{0,2}^2 +2\xi_{0,1}\xi_{0,2}\cos\delta}$, tale che 
+\begin{equation}
+\begin{split}
+    \xi_{max}&=|\xi_{0,1}+\xi_{0,2}|\ \ \ \ \ \text{con} \ \cos\delta=1\\
+    \xi_{min}&=|\xi_{0,1}-\xi_{0,2}|\ \ \ \ \ \text{con} \ \cos\delta=-1
+\nonumber
+\end{split}
+\end{equation}
+Consideriamo propagazione nel vuoto o nello stesso mezzo ($n_1 = n_2$). Si ha:\\
+- interferenza costruttiva, se la differenza dei cammini ottici è multiplo intero di $\lambda$, ossia
+\begin{equation}
+    \frac{2\pi}{\lambda}(r_2-r_1)=2n\pi \ \Rightarrow \ (r_2-r_1)=n\lambda
+    \nonumber
+\end{equation}
+- interferenza distruttiva, se la differenza dei cammini ottici è multiplo dispari di $\frac{\lambda}{2}$, ossia
+\begin{equation}
+    \frac{2\pi}{\lambda}(r_2-r_1)=(2n+1)\pi \ \Rightarrow \ (r_2-r_1)=(2n+1)\frac{\lambda}{2}
+    \nonumber
+\end{equation}
+\textbf{N.B.:} se $\delta=cost$, allora $\alpha=cost$ in $\xi=\xi_0\sin(\omega t+\alpha)$.\\
+Se $(r_2-r_1)=cost$, si ottengono iperboli con fuochi in $S_1$ e $S_2$, con ventri in $(r_2-r_1)=n\lambda$ e nodi in $(r_2-r_1)=(2n+1)$.\\
+\\
+Si studia l'interferenza di due sorgenti luminose.\\
+A grande distanza $D$ dalle sorgenti si assume:
+\begin{equation}
+\begin{split}
+    &a<<r_1,r_2\\
+    &r_1\cong r_2 \\
+    &\xi_{0,1}\cong \xi_{0,2}
+    \nonumber
+\end{split}
+\end{equation}
+quindi si ha che:
+\begin{equation}
+\begin{split}
+    \xi_0&=\sqrt{\xi_{0,1}^2+\xi_{0,2}^2 +2\xi_{0,1}\xi_{0,2}\cos\delta}\\
+    &=\xi_{0,1}\sqrt{2(1+\cos\delta)}\\
+    &=\xi_{0,1}\sqrt{2\left(1+2\cos^2\left(\frac{\delta}{2}\right)-1\right)}\\
+    &=2\xi_{0,1}\cos\frac{\delta}{2}
+    \nonumber
+\end{split}
+\end{equation}
+L’intensità è proporzionale al quadrato del campo
+\begin{equation}
+    I=I_0\cos^2\frac{\delta}{2}
+    \nonumber
+\end{equation}
+ed è massima, $I=I_{max}$, quando $\frac{\delta}{2}=n\pi$, ossia quando $\delta=\frac{2\pi}{\lambda}(r_2-r_1)=\frac{2\pi a\sin\theta}{\lambda} \cong \frac{2\pi a}{\lambda}\frac{x}{D}$ con $x=\frac{n\lambda D}{a}$.\\
+\\
+Si considerano N sorgenti sferiche puntiformi coerenti, spaziate di $a$ una dall’altra. Si utilizza il metodo dei vettori rotanti.\\
+A grande distanza vale 
+\begin{equation}
+\begin{split}
+    &r_1\cong r_2\cong r_3\cong ...\cong r_N \\
+    &\xi_{0,1}\cong \xi_{0,2}\cong \xi_{0,3}\cong ...\cong \xi_{0,N}
+    \nonumber
+\end{split}
+\end{equation}
+quindi ogni sorgente è sfasata rispetto alla precedente della stessa
+quantità $\delta$ pari a
+\begin{equation}
+    \delta=\frac{2\pi a\sin\theta}{\lambda}
+    \nonumber
+\end{equation}
+Dalla composizione dei vettori rotanti, l’ampiezza totale OP vale
+\begin{equation}
+    OP=\xi_0=2\ro\sin\frac{N\delta}{2}
+    \nonumber
+\end{equation}
+dove $\ro=\frac{\xi_{0,1}}{2\sin(\frac{\delta}{2})}$.\\
+Perciò si ottiene che:
+\begin{equation}
+    \xi_0=\xi_{0,1}\frac{\sin\frac{N\delta}{2}}{\sin\frac{\delta}{2}}=\xi_{0,1}\frac{\sin\frac{N\pi a\sin\theta}{\lambda}}{\sin\frac{\pi a\sin\theta}{\lambda}}
+    \nonumber
+\end{equation}
+\begin{equation}
+    I=I_1\frac{\sin^2\frac{N\delta}{2}}{\sin^2\frac{\delta}{2}}=I_1\frac{\sin^2\frac{N\pi a\sin\theta}{\lambda}}{\sin^2\frac{\pi a\sin\theta}{\lambda}}
+    \nonumber
+\end{equation}
+dove $I_1$ è l’intensità della singola sorgente.\\
+\textbf{N.B.:} per N=2 si ottengono le formule già ricavate precedentemente.\\
+\\
+L’intensità è massima, $I=I_{max}=N^2I_1$, quando tutti i campi sono in fase, ossia quando $\delta=\frac{2\pi a\sin\theta}{\lambda}=2n\pi$; perciò si ottengono i massimi principali se, con $n$ intero, vale
+\begin{equation}
+    a\sin\theta=n\lambda 
+    \nonumber
+\end{equation}
+Invece l'intensità è minima, $I=I_{min}=0$, quando $\frac{N\delta}{2}=\frac{N\pi a\sin\theta}{\lambda}=m\pi$; perciò si ottengono minimi se, con $m$ intero, vale
+\begin{equation}
+    a\sin\theta=\frac{m}{N}\lambda 
+    \nonumber
+\end{equation}
+Si precisa che $m$ assume tutti i valori eccetto $0, N, 2N, ...$, perchè in corrispondenza di questi valori ci sono i massimi principali. \\
+Tra due zeri c’è un massimo (massimo secondario).\\
+Tra due massimi principali, ci sono $(N-2)$ massimi secondari.\\
+Per $N$ grande, l’intensità delle $N$ sorgenti si concentra prevalentemente nei massimi principali. Infatti l’interferenza comporta una forte dipendenza dell’intensità dalla direzione, cioè dall’angolo $\theta$.
+
+\section*{C.18 - Diffrazione}
+\textbf{Principio di Huygens-Fresnel}\\
+Ogni punto di ogni fronte d’onda si comporta come una sorgente di onde sferiche. \\
+\\
+Il comportamento della luce quando incontra un ostacolo (es. schermo opaco con una apertura di dimensioni $d$) dipende da $d$ rispetto alla lunghezza d’onda $\lambda$:\\
+Se $\lambda << d$ (ottica geometrica),\\
+- l’onda si propaga mantenendo circa inalterata la sua direzione di propagazione (propagazione rettilinea;\\
+- su uno schermo si osserva l’ombra geometrica dello schermo con l’apertura (è illuminata un’area della stessa forma e dimensioni dell’apertura).\\
+Se $\lambda >> d$,\\
+- l’apertura si comporta come una sorgente puntiforme e irraggia onde sferiche (secondo il principio di Huygens);\\
+- l’apertura trasforma un’onda con una sola direzione di propagazione in un onda con tutte le direzioni di propagazione.\\
+Se $\lambda\cong d$ (ottica diffrattiva),\\
+- la luce devia dalla sua direzione originale e forma sullo schermo una figura caratteristica detta figura di diffrazione.\\
+\\
+Si studia la diffrazione di Fraunhofer.\\
+Si suppone che il campo incidente sia diverso da zero solo sui punti dell’apertura, cioè si trascurano gli effetti di bordo: dunque, è possibile trattare il campo solo per i suoi aspetti scalari. Si intoduce allora la teoria scalare della diffrazione.\\
+\\
+Per l'approssimazione di Fraunhofer, si osserva l'ampiezza del campo a grandi distanze e per il principio di Huygens, ogni punto dell’apertura si comporta come una sorgente di onde sferiche.\\
+La figura di diffrazione è il risultato dell’interferenza di queste sorgenti sferiche, coerenti e di ampiezza infinitesima, quindi la poligonale dell’interferenza di $N$ sorgenti diventa un arco di cerchio.\\
+L’ampiezza $A$ del campo, data dalla corda $OP$, è pari a
+\begin{equation}
+    A=OP=2\rho\sin\frac{\alpha}{2}
+    \nonumber
+\end{equation}
+con $\alpha=\frac{2\pi b\sin\theta}{\lambda}$, che corrisponde alla differenza di fase tra gli estremi A e B dell'apertura.\\
+Per $\theta=0$, le sorgenti sono in fase e l’ampiezza è massima, infatti $A(\theta=0)=A_0=\rho\alpha$. Dunque l’ampiezza $A$ del campo totale si può scrivere come
+\begin{equation}
+    A=2\frac{A_0}{\alpha}\sin\frac{\alpha}{2}=A_0\frac{\sin\left(\frac{\pi b\sin\theta}{\lambda}\right)}{\frac{\pi b\sin\theta}{\lambda}}
+    \nonumber
+\end{equation}
+mentre l'intensità è definita come
+\begin{equation}
+    I=I_0\left[\frac{\sin\left(\frac{\pi b\sin\theta}{\lambda}\right)}{\frac{\pi b\sin\theta}{\lambda}}\right]^2
+    \nonumber
+\end{equation}
+L'intensità ha un andamento oscillante decrescente. Si ha che: \\
+- $I=I_{max}=I_0$ per $\theta=0$;\\
+- $I=0$ per $\frac{\pi b\sin\theta}{\lambda}=n\pi$, ossia per $\sin\theta=n\frac{\lambda}{b}$.\\
+I primi zeri si hanno per $\sin\theta=\pm\frac{\lambda}{b}$ e individuano l'ampiezza $\Delta\theta$ del massimo centrale. Per piccoli angoli si può anche approssimare $\Delta\theta=\frac{\lambda}{b}$.\\
+\\
+Date due sorgenti che incidono ad angoli diversi su una apertura, il criterio di Rayleigh stabilisce che l’angolo minimo per distinguere  la presenza delle due sorgenti è quello per cui il massimo principale di una cade sul primo zero dell'altra.\\
+\\
+Si studia la figura di diffrazione di Fraunhofer da una apertura circolare di diametro $D$.\\
+Essa è simile alla figura di rotazione della funzione $[\frac{sin x}{x}]^2$. L'angolo tra il massimo e il primo zero è 
+\begin{equation}
+    \theta=1.22\frac{\lambda}{D}
+    \nonumber
+\end{equation}
+Si definice il potere separatore $\rho$ di una apertura circolare come
+\begin{equation}
+    \rho=\frac{1}{\theta}=\frac{D}{1.22\lambda}
+    \nonumber
+\end{equation}
+\textbf{N.B.:} per una lente, la capacità di discriminare le immagini di due sorgenti puntiformi cresce con la sua apertura $D$.\\
+\\
+Si studia la diffrazione da due fenditure uguali.\\
+Essendo le due fenditure uguali, l'ampiezza della figura di diffrazione di ciascuna di esse risulta
+\begin{equation}
+    A_1=A_2=A_0\frac{\sin\left(\frac{\pi b\sin\theta}{\lambda}\right)}{\frac{\pi b\sin\theta}{\lambda}}
+    \nonumber
+\end{equation}
+quindi ogni punto dell’apertura $A_1$ risulta sfasato rispetto al corrispondente punto di $A_2$ di $\beta=\frac{2\pi}{\lambda}a\sin\theta$.\\
+$A_1$ e $A_2$ danno quindi luogo a una figura di interferenza di ampiezza 
+\begin{equation}
+\begin{split}
+    A&=\sqrt{A_1^2+A_2^2+2A_1A_2\cos\beta}\\
+    &=A_1\sqrt{2(1-\cos\beta)}=2A_1\cos\left(\frac{\beta}{2}\right)
+    \nonumber
+\end{split}
+\end{equation}
+Dunque sostituendo $A_1$, si ottiene che l'ampiezza $A$ del campo totale si può scrivere come
+\begin{equation}
+    A=A_0\frac{\sin\left(\frac{\pi b\sin\theta}{\lambda}\right)}{\frac{\pi b\sin\theta}{\lambda}}\cos\left(\frac{\pi a\sin\theta}{\lambda}\right)
+    \nonumber
+\end{equation}
+mentre l'intensità è definita come
+\begin{equation}
+    I=I_0\left[\frac{\sin\left(\frac{\pi b\sin\theta}{\lambda}\right)}{\frac{\pi b\sin\theta}{\lambda}}\right]^2\cos^2\left(\frac{\pi a\sin\theta}{\lambda}\right)
+    \nonumber
+\end{equation}
+Il risultato è la figura di interferenza di due sorgenti modulata dalla figura di diffrazione dell'apertura.\\
+\textbf{N.B.:} essendo $a > b$, la frequenza di oscillazione dell'interferenza è sempre maggiore di quella della diffrazione.\\
+\\
+Si studia la diffrazione in un reticolo di $N$ fenditure.\\
+Seguendo quanto dimostrato nel caso di due fenditure, l'intensità dovuta all'interferenza di $N$ sorgenti risulta  $I=I_0\left[\frac{\sin\frac{N\pi a\sin\theta}{\lambda}}{\sin\frac{\pi a\sin\theta}{\lambda}}\right]^2$. Quindi combinando l'effetto di diffrazione si ottiene che
+\begin{equation}
+    I=I_0\left[\frac{\sin\frac{N\pi a\sin\theta}{\lambda}}{\sin\frac{\pi a\sin\theta}{\lambda}}\right]^2 \left[\frac{\sin\frac{\pi b\sin\theta}{\lambda}}{\frac{\pi b\sin\theta}{\lambda}}\right]^2
+    \nonumber
+\end{equation}
+dove i massimi principali si trovano per $a\sin\theta=n\lambda$.
+Fissate l’ampiezza e la distanza delle fenditure, le posizioni dei massimi principali dipendono dalla lunghezza d’onda.\\
+\\
+Si definisce dispersione del reticolo la grandezza
+\begin{equation}
+    D=\frac{d\theta}{d\lambda}=\frac{n}{a\cos\theta}=\frac{1}{\sqrt{\left(\frac{a}{n}\right)^2-\lambda^2}}
+    \nonumber
+\end{equation}
+dove $a\sin\theta=n\lambda$. \\
+La dispersione aumenta con l’ordine $n$. Per $n=0$ (ordine zero) si ha $D=0$. Dunque i massimi di ordine zero sono sovrapposti indipendentemente dalla lunghezza d’onda.\\
+\\
+\textbf{Criterio di Rayleigh}\\
+Le lunghezze d’onda $\lambda_1$ e $\lambda_2$ sono risolte quando il massimo di una coincide con il primo zero dell’altra.\\
+\\
+Si definisce potere risolvente R del reticolo il valore
+\begin{equation}
+    R=\frac{\lambda}{d\lambda}=nN
+    \nonumber
+\end{equation}
+ossia dipende dall'ordine del massimo e dal numero totale delle fenditure.
+
+\section*{C.19 - Analisi di Fourier}
+Una funzione $f(z,t)$ (non periodica) può sempre essere espressa come sovrapposizione di un insieme continuo di termini armonici:
+\begin{equation}
+    f(z,t)=\int_0^\infty[a(z,\omega)\sin(\omega t)+b(z,\omega)\cos(w,t)]d\omega
+    \nonumber
+\end{equation}
+con 
+\begin{equation}
+\begin{split}
+    a(z,\omega)&=\frac{1}{\pi}\int_{-\infty}^{+\infty} f(z,t)\sin(\omega t)dt \\
+    b(z,\omega)&=\frac{1}{\pi}\int_{-\infty}^{+\infty} f(z,t)\cos(\omega t)dt
+    \nonumber
+\end{split}
+\end{equation}
+Dunque per il teorema di Fourier, ogni segnale elettromagnetico può essere visto come sovrapposizione di infinite onde piane monocromatiche.\\
+Si definisce spettro di frequenza l'intervallo di frequenze su cui si sviluppa il segnale.\\
+\\
+Si sa che in un mezzo materiale, la velocità della luce è pari a
+\begin{equation}
+    v=\frac{1}{\sqrt{\varepsilon\mu}}=\frac{c}{\sqrt{\varepsilon_r\mu_r}}
+    \nonumber
+\end{equation}
+Per molti materiali, l’interazione di dipolo elettrico è prevalente, tale che $\varepsilon_r>1$ e $\mu_r\cong1$; perciò vale
+\begin{equation}
+    v\cong\frac{c}{\sqrt{\varepsilon_r}}=\frac{c}{n}
+    \nonumber
+\end{equation}
+dove $n=\sqrt{\varepsilon_r}$, che prende il nome di indice di rifrazione.\\
+Dunque ogni onda elementare si propaga con velocità di fase
+\begin{equation}
+    v_f=\frac{c}{n}=\frac{\omega}{k}=\lambda\nu
+    \nonumber
+\end{equation}
+che prende il nome di relazione di dispersione.\\
+\textbf{N.B.:} se $n = n(\nu)$ ogni onda armonica ha velocità diversa.\\
+\\
+Si considera un segnale a 2 componenti, tale che $\Delta\omega<<\omega$ e $\Delta k<<k$\\
+\begin{equation}
+\begin{split}
+    f(z,t)&=f_0\sin(kz - \omega t)+ f_0\sin[(k+\Delta k)z-(\omega+\Delta\omega)t]\\
+    &=f_0\sin\left[\frac{(2k+\Delta k)z}{2}-\frac{(2\omega+\Delta\omega)t}{2}\right]\cos\left[-\frac{\Delta k-\Delta\omega t}{2}\right]
+    \nonumber
+\end{split}
+\end{equation}
+Trascurando $\Delta\omega$ e $\Delta k$ rispetto a $\omega$ e a $k$ si ottiene
+\begin{equation}
+    f(z,t)=2f_0\sin(kz-\omega t)\cos\left[\frac{\Delta kz-\Delta\omega t}{2}\right]
+    \nonumber
+\end{equation}
+Dunque $f(z,t)$ rappresenta l’espressione di un battimento, cioè di un segnale a frequenza $\omega$ modulato in ampiezza a frequenza $\Delta\omega$.\\
+Il segnale fisico reale è costituito dal battimento, cioè l’inviluppo delle due onde, che è rappresentato dal termine $\cos\left[-\frac{\Delta k-\Delta\omega t}{2}\right]$ e si propaga con velocità di gruppo $v_g$ pari a
+\begin{equation}
+    v_g=\frac{\Delta\omega}{\Delta k}
+    \nonumber
+\end{equation}
+mentre per la singola onda la velocità di fase $v_f$ è pari a
+\begin{equation}
+    v_f=\frac{\omega}{k}
+    \nonumber
+\end{equation}
+In generale, quando c’è tutto uno spettro di frequenze e non solo due, maggiore è l’intervallo di frequenze, più localizzato nel tempo (e nello spazio) è il pacchetto d’onda.\\
+\\
+Si osserva che 
+\begin{equation}
+    v_g=\frac{d\omega}{dk}=\frac{d(kv_f)}{dk}=v_f+k\frac{dv_f}{dk}
+    \nonumber
+\end{equation}
+dove $ k= \frac{\omega}{v_f} =\frac{2\pi\nu}{v_f} =\frac{2\pi}{\lambda} $, sapendo che $ v_f = \lambda \nu $. \\
+\\
+Ne segue che
+\begin{equation}
+    \frac{1}{v_g}=\frac{dk}{d\omega}=\frac{d(2\pi/\lambda)}{d(2\pi \nu)}=\frac{d(1/\lambda)}{d\nu}=\frac{d}{d\nu}\frac{n\nu}{c}=\frac{n}{c}+\frac{\nu}{c}\frac{dn}{d\nu}
+    \nonumber
+\end{equation}
+quindi se $\frac{dn}{d\nu}\neq0$, allora $v_g\neq v_f$.\\
+Un materiale in cui $n = n(\nu)$ si dice materiale dispersivo.
+
+\section*{C.20 - Dipolo oscillante}
+Si considera il dipolo elettrico con momento che oscilla sinusoidalmente nel tempo
+\begin{equation}
+    \textbf{p}=\textbf{p}_0\sin\omega t
+    \nonumber
+\end{equation}
+E’ la base per il modello di interazione radiazione-materia: la distanza nucleo-elettrone può essere modulata da un campo e.m. sinosuidale e l’atomo si comporta come un dipolo oscillante ed emette a sua volta radiazione e.m..\\
+La soluzione esatta (valida anche per $r \approx dr$) per i campi contiene termini proporzionali a $\frac{1}{r^3}$, $\frac{1}{r^2}$ e $\frac{1}{r}$, anche se a grandi distanze ($r >> \lambda >> dr$) rimane solo il termine $\frac{1}{r}$.\\
+Ponendo
+\begin{equation}
+    \textbf{k}=\frac{\omega}{c}\textbf{u}_r
+    \nonumber
+\end{equation}
+risulta che 
+\begin{equation}
+\begin{split}
+    \textbf{E}&=\frac{1}{4\pi \varepsilon_0}\frac{(\textbf{p}_0\times\textbf{k})\times\textbf{k}}{r}\sin(kr-\omega t)\\
+    \textbf{B}&=\frac{\mu_0\omega}{4\pi} \frac{\textbf{p}_0\times\textbf{k}}{r}\sin(kr-\omega t)
+    \nonumber
+\end{split}
+\end{equation}
+La soluzione per i campi \textbf{E} e \textbf{B} è:\\
+- un’onda sferica (con ampiezza $\propto\frac{1}{r}$);\\
+- progressiva, che si allontana dal dipolo.\\
+\\
+I campi \textbf{E} e \textbf{B} sono tangenti alla superficie sferica di raggio $r$, con \textbf{E} appartenente al piano meridiano.\\
+In modulo si ha
+\begin{equation}
+\begin{split}
+    E&=E_{\theta}=\frac{p_0\sin\theta k^2}{4\pi \varepsilon_0 r}\sin(kr-\omega t)=\frac{p_0\sin\theta }{4\pi \varepsilon_0 r}\left(\frac{\omega}{c}\right)^2\sin(kr-\omega t)\\
+    B&=B_{\varphi}=\frac{\mu_0\omega}{4\pi} \frac{p_0\sin\theta}{r}\frac{\omega}{c}\sin(kr-\omega t)=\frac{p_0\sin\theta}{4\pi\varepsilon_0rc} \left(\frac{\omega}{c}\right)^2\sin(kr-\omega t) =\frac{E}{c}
+    \nonumber
+\end{split}
+\end{equation}
+Si fanno le seguenti osservazioni:\\
+- i moduli dei campi dipendono da $\theta$;\\
+- il dipolo non emette nella direzione di oscillazione
+($\theta=0$);\\
+- la massima emissione si ha per $\theta=\frac{\pi}{2}$;\\
+- tra il modulo di \textbf{E} e di \textbf{B} vale lo stesso rapporto delle onde piane o sferiche;\\
+- $\textbf{E}$ è polarizzato linearmente nel piano meridiano.\\
+\\
+Il dipolo oscillante possiede densità di energia pari a 
+\begin{equation}
+    u_{em}=\varepsilon_0E^2=\frac{p_0^2\sin^2\theta }{16\pi^2 \varepsilon_0 r^2}\left(\frac{\omega}{c}\right)^4\sin^2(kr-\omega t)
+    \nonumber
+\end{equation}
+quindi la densità di energia media è data da
+\begin{equation}
+    \bar{u}_{em}=\varepsilon_0E^2=\frac{p_0^2\sin^2\theta }{32\pi^2 \varepsilon_0 r^2}\left(\frac{\omega}{c}\right)^4
+    \nonumber
+\end{equation}
+mentre l'intensità media si calcola come
+\begin{equation}
+    \bar{I}=c\bar{u}_{em}=\frac{cp_0^2\sin^2\theta }{32\pi^2 \varepsilon_0 r^2}\left(\frac{\omega}{c}\right)^4 =I_0\frac{\sin^2\theta}{r^2}
+    \nonumber
+\end{equation}
+con $I_0\propto\omega^4$, dunque l’intensità cresce rapidamente all'aumentare della frequenza.\\
+\\
+Si definisce potenza totale irraggiata la grandezza
+\begin{equation}
+    P=I_0\frac{8\pi}{3}
+    \nonumber
+\end{equation}
+con $P\propto I_0\propto\omega^4$, dunque anche la potenza totale irraggiata cresce rapidamente all'aumentare della frequenza.
+
+\section*{C.21 - Interazione onda-materia}
+Con il metodo simbolico (già introdotto nel C.16) possiamo dare una rappresentazione complessa ad ogni funzione che varia sinusoidalmente nel tempo.
+In presenza di un’onda gli elettroni del mezzo subiscono una forza
+\begin{equation}
+    \textbf{F}=\textbf{F}_e+\textbf{F}m=q_e(\textbf{E}+\textbf{v}\times\textbf{B})
+\nonumber
+\end{equation}
+ed essendo $|\textbf{v}\times\textbf{B}|\leq\frac{vE}{c}$, se vale $v<<c$, allora $F_m<<F_e$.\\
+ In questa approssimazione la propagazione dell’onda è determinata dalle proprietà elettriche del materiale ed è indipendente dalle proprietà magnetiche.\\
+ \\
+ Si considera un modello semplice di atomo isolato, (come per la polarizzazione dei dielettrici per deformazione): nucleo puntiforme di carica $+e$ e carica negativa $-e$ distribuita uniformemente in una regione sferica di raggio $a$.\\
+ Se separiamo le distribuzioni di carica, sul protone agisce la forza di attrazione coulombiana:
+\begin{equation}
+    F_e=\frac{e^2z}{4\pi\varepsilon_0a^3}
+\nonumber
+\end{equation}
+dovuta alla carica negativa contenuta nella sfera di raggio pari allo spostamento z tra i centri delle due cariche.\\
+La forza sull’elettrone è uguale e contraria ed è una “forza di richiamo” tale che 
+\begin{equation}
+    m\ddot{z}=-F_e \ \Rightarrow \ m\ddot{z}=-F_e \ \Rightarrow \ \ddot{z}+\omega_0^2z=0
+\nonumber
+\end{equation}
+quindi l’elettrone oscilla con moto armonico con frequenza propria pari a
+\begin{equation}
+    \omega_0=\sqrt{\frac{e^2}{4\pi\varepsilon_0ma^3}}
+\nonumber
+\end{equation}
+dunque $\omega_0$ dipende dall’attrazione coulombiana tra nucleo ed elettrone.\\
+\\
+Si considera ora un atomo in un gas.\\
+Con un termine di smorzamento di tipo viscoso si tiene conto di:\\
+- interazioni con gli altri atomi;\\
+- irraggiamento.\\
+Allora l'equazione del moto diventa
+\begin{equation}
+    m\ddot{z}=-b\dot{z}-kz \ \Rightarrow \ \ddot{z}+\gamma\dot{z}+\omega_0^2z=0
+\nonumber
+\end{equation}
+che descrive un moto armonico smorzato.\\
+\\
+In interazione con un’onda, l’equazione di moto dell’elettrone è quella di un oscillatore smorzato forzato da un forzante che oscilla sinusoidalmente, ossia da un onda incidente.
+\begin{equation}
+    m\ddot{z}=-b\dot{z}-kz+q_eE_0e^{i\omega t}
+\nonumber
+\end{equation}
+\begin{equation}
+    \ddot{z}+\gamma\dot{z}+\omega_0^2z=\frac{q_e}{m} E_0e^{i\omega t}
+\nonumber
+\end{equation}
+Quindi sapendo che $\textbf{p}=q_e\textbf{z}$, e dunque $\textbf{P}=N\textbf{p}=Nq_e\textbf{z}$, si determina che l’onda induce dei dipoli oscillanti e quindi una polarizzazione \textbf{P}, tale che
+\begin{equation}
+    \ddot{\textbf{P}}+\gamma\dot{\textbf{P}}+\omega_0^2\textbf{P} =\frac{Nq_e^2}{m} E_0e^{i\omega t}
+    \nonumber
+\end{equation}
+La polarizzazione a sua volta modifica il campo elettromagnetico, infatti se $\rho=0$, $\textbf{j}=0$, vale che 
+\begin{equation}
+    \nabla^2\textbf{E}-\frac{1}{c^2}\frac{\partial^2\textbf{E}}{\partial t^2}=\mu_0\frac{\partial^2\textbf{P}}{\partial t^2}
+\end{equation}
+Dunque in assenza di sorgenti, la soluzione per il campo è del tipo onda piana.\\
+\\
+L’onda e.m. si propaga, e perchè ci sia interazione tra onda e materia anche la polarizzazazione deve avere una soluzione di propagazione. Ma per avere scambio di energia, la polarizzazione deve oscillare alla stessa frequenza dell’onda (energia del fotone $h\nu$).\\
+Si cercano soluzioni del tipo
+\begin{align*}
+    \textbf{E}&=\textbf{E}_0e^{i(\omega t-kz)} & \textbf{P}&=\textbf{P}_0e^{i(\omega t-kz)}
+\nonumber
+\end{align*}
+tali che
+\begin{equation}
+    \textbf{P}=\frac{Nq_e^2}{m(\omega_0^2-\omega^2+i\gamma\omega)}\textbf{E}
+\nonumber
+\end{equation}
+Il coefficiente immaginario indica un ritardo di fase $\delta$: \textbf{P} segue \textbf{E} con un certo ritardo, dato da
+\begin{equation}
+    \text{tg}\delta=\frac{\gamma\omega}{\omega_0^2-\omega^2}
+\nonumber
+\end{equation}
+quindi si ha che:\\
+- $\delta\cong 0$ se $\omega<<\omega_0$;\\
+- $\delta=\delta_{max}=\frac{\pi}{2}$, se $\omega=\omega_0$.\\
+\\
+Dalla relazione (...), sapendo che $\textbf{P}=\varepsilon_0\chi\textbf{E}=\varepsilon_0(\varepsilon_r-1)\textbf{E}$, si ricava la \textbf{relazione di dispersione}
+\begin{equation}
+    \frac{k^2}{\omega^2}=\frac{1+\chi}{c^2}=\frac{\varepsilon_r}{c^2}=\frac{n^2}{c^2}
+    \nonumber 
+\end{equation}
+con $n=n(\omega)$ indice di rifrazione.\\
+\\
+Per i gas si ha $\textbf{P}=\varepsilon_0\chi\textbf{E} =N\alpha\textbf{E}$, dove la polarizzabilità $\alpha$ è data da
+\begin{equation}
+    \alpha=\frac{q_e^2}{m(\omega_0^2-\omega^2+i\gamma\omega)}
+    \nonumber
+\end{equation}
+Inoltre, con $\frac{N\alpha}{\varepsilon_0}<<1$, si ha
+\begin{equation}
+    n=\sqrt{1+\chi}=\sqrt{1+\frac{N\alpha}{\varepsilon_0}}\cong 1+\frac{N\alpha}{2\varepsilon_0}=1+\frac{\chi}{\varepsilon_0}
+    \nonumber    
+\end{equation}
+ed essendo
+\begin{equation}
+\begin{split}
+    \chi(\omega)&=\frac{Nq_e}{\varepsilon_0m(\omega_0^2-\omega^2+i\gamma\omega)}=\chi'-i\chi''\\
+    &=\frac{Nq_e}{\varepsilon_0m}\left[\frac{\omega_0^2-\omega^2}{(\omega_0^2-\omega^2)^2+\gamma^2\omega^2}-i\frac{\gamma\omega}{(\omega_0^2-\omega^2)^2+\gamma^2\omega^2}\right]
+    \nonumber
+\end{split}
+\end{equation}
+si ottiene che
+\begin{equation}
+    n=1+\frac{\chi'}{2}-i\frac{\chi''}{2}=n'-in''
+    \nonumber
+\end{equation}
+quindi a basse frequenze, per $\omega<<\omega_0$,si possono trascurare $\omega^2$e $\gamma\omega$ e considerare $n=cost$ tale che $n=n'\cong1$.\\
+Con $\omega<\omega_0$, $n>1$.\\
+Con $\omega>\omega_0$, $n<1$.\\
+\\
+La velocità di fase delle singole componenti dipende da $\omega$:\\
+- se $\frac{dn}{d\omega}>0$, si ha dispersione normale;\\
+- se $\frac{dn}{d\omega}<0$, si ha dispersione anomala.\\
+Dalla definizione di velocità di gruppo si ottiene
+\begin{equation}
+    v_g=\frac{c}{n+\omega\frac{dn}{d\omega}}
+    \nonumber
+\end{equation}
+Quindi nelle regioni di dispersione normale, $v_g<v_f$e $v_g<c$, anche quando $n<1$e $v_f>c$.\\
+Mentre nella regione di dispersione anomala, $v_g>v_f$e $v_g>c$ per $\omega\cong\omega_0$. Tuttavia in tale regione il pacchetto è fortemente distorto e perde significato la definizione di velocità di gruppo. Un’analisi più accurata mostra che la velocità fisica del pacchetto è sempre $<c$.\\
+Inoltre un sistema atomico ha molte frequenze di risonanza date da
+\begin{equation}
+    n'=1+\sum_k\frac{Nq_{e,k}}{\varepsilon_0m\varepsilon_0}\frac{\omega_{0,k}^2-\omega^2}{(\omega_{0,k}^2-\omega^2)^2+\gamma_k^2\omega^2}
+    \nonumber
+\end{equation}
+In generale, dove $\omega$ è a risonanza per una frequenza è fuori
+risonanza per le altre, quindi la situazione limite descritta non si verifica.\\
+\\
+Invece $n''$ determina l'assorbimento dell'onda del materiale, infatti
+\begin{equation}
+    E=E_0e^{i(\omega t-kz)}=E_0e^{i\left(t-\frac{n}{c}z\right)}=E_0e^{-\left(\frac{n''\omega}{c}z\right)}e^{i\omega\left(t-\frac{n'}{c}z\right)}
+    \nonumber
+\end{equation}
+dunque l’intensità dell’onda si attenua in modo esponenziale con la propagazione, poiché
+\begin{equation}
+    \Bar{I}\propto\Bar{E}^2=\Bar{E}_0^2e^{-2\frac{n''\omega}{c}z}=\Bar{E}_0^2e^{-\Gamma z}
+    \nonumber
+\end{equation}
+dove $\Gamma=2\frac{n''\omega}{c}$ è il coefficiente di assorbimento.\\
+Se $\gamma=0$, $\Gamma=\Gamma(n'')=0$.\\
+Se $\gamma\cong\omega_0$, ossia vicino alla risonanza, si ha che
+\begin{equation}
+    \Gamma=\frac{Nq_e^2}{\varepsilon_0mc}\frac{\gamma}{4(\omega_0-\omega)^2+\gamma^2}
+    \nonumber
+\end{equation}
+che rappresenta la forma caratteristica di riga di assorbimento atomico, detta Lorentziana.\\
+In un sistema complesso vi sono diverse frequenze di risonanza $\omega_{0,k}$, tali che $\Gamma=\sum_k\Gamma_k$. L’inviluppo delle righe di assorbimento costituisce lo spettro di assorbimento del materiale.\\
+\\
+Nella regione di dispersione anomala, l’assorbimento è significativo.\\
+Nella regione di dispersione normale, il materiale è trasparente.\\
+\\
+Si studia la propagazione delle onde in mezzi conduttori.\\
+Gli elettroni sono liberi di muoversi e rispetto al modello dei dielettrici, non c’è la forza di richiamo elastica, ed è descritto da
+\begin{equation}
+    \ddot{z}+\gamma\dot{z}=\frac{q_e}{m}E
+    \nonumber
+\end{equation}
+da cui si ottiene
+\begin{equation}
+\begin{split}
+    \Ddot{\textbf{P}}+\gamma\Dot{\textbf{P}}&=\frac{Nq_e^2}{m}\textbf{E}\\
+    -\omega^2P-i\gamma\omega P&=\frac{Nq_e^2}{m}E
+    \nonumber
+\end{split}   
+\end{equation}
+\begin{equation}
+    n^2=1+\chi=1+\frac{Nq_e^2}{\varepsilon_0m}\frac{1}{-\omega+i\gamma\omega}
+    \nonumber
+\end{equation}
+Il moto è reso mediamente uniforme dagli urti, descritti dalla forza di smorzamento, $2\gamma\dot{z}\cong\frac{q_e}{m}E$. Sapendo che $j=\sigma E=Nq_e\dot{z}$, si ottiene
+\begin{equation}
+\begin{split}
+     \sigma&=\frac{Nq_e^2}{m\gamma}=\frac{Nq_e^2\tau}{m}\\
+     \gamma&=\frac{1}{\tau}
+     \nonumber
+\end{split}
+\end{equation}
+dove $\tau$ è il tempo caratteristico del modello Drude-Lorentz.\\
+Dunque si ricava $n$ indice di rifrazione da
+\begin{equation}
+    n^2=1+\frac{Nq_e^2}{\varepsilon_0m}\frac{1}{\gamma(-\omega^2+i\gamma\omega)/\gamma}=1+\frac{\sigma}{i\varepsilon_0\omega(1+i\omega\tau)}
+    \nonumber
+\end{equation}
+Se $\omega\tau<<1$, ossia $\omega<<\frac{1}{\tau}\approx 4\times 10^{13}\text{Hz}$, vale che
+\begin{equation}
+    n^2=1+\frac{\sigma}{i\varepsilon_0\omega}
+    \nonumber
+\end{equation}
+e con $\omega$ sufficientemente piccolo, si ha che
+\begin{equation}
+\begin{split}
+    n^2&\cong-i\frac{\sigma}{\varepsilon_0\omega}\\
+    n&\cong\sqrt{i}\sqrt{\frac{\sigma}{\varepsilon_0\omega}}=\sqrt{\frac{\sigma}{\varepsilon_0\omega}}\frac{1-i}{\sqrt{2}}
+    \nonumber
+\end{split}
+\end{equation}
+e dunque si osserva un assorbimento esponenziale con
+\begin{equation}
+    E\propto e^{-\sqrt{\frac{\sigma}{2\varepsilon_0\omega}}\frac{\omega}{c}z}=e^{-\frac{z}{\delta}}
+    \nonumber
+\end{equation}
+dove $\delta=\frac{c}{n''\omega}=c\frac{2\varepsilon_0}{\sigma\omega}$.\\
+Per molti metalli per radiazione visibile $\delta$ è molto piccolo.\\
+\\
+Effetto pelle: il campo e.m. si annulla dopo poche decine di micron. L’onda non penetra ed è quasi totalmente riflessa.\\
+L'approssimazione reale del conduttore perfetto, valida solo in un dato intervallo di frequenze è la seguente:
+\begin{equation}
+    n^2=1+\frac{\sigma}{i\varepsilon_0\omega(1+i\omega\tau)}
+    \nonumber
+\end{equation}
+Se $\omega\tau>>1$, si ha che
+\begin{equation}
+    n^2=1-\frac{\sigma}{i\varepsilon_0\omega^2\tau}
+    \nonumber
+\end{equation}
+e definita la frequenza di plasma come $\omega_p=\sqrt{\frac{\sigma}{\varepsilon_o\tau}}$, si ha che
+\begin{equation}
+    n^2=1-\left(\frac{\omega_p}{\omega}\right)
+    \nonumber
+\end{equation}
+Se $\omega>>\omega_p$, ossia con $n\cong 1$, il metallo è trasparente.\\
+Il plasma è un gas di elettroni e di ioni che oscillano a frequenza caratteristica, detta appunto frequenza di plasma e presenta un comportamento analogo al metallo ($\omega_{p,atmosfera}=10^7$Hz).\\
+Nell’atmosfera (ionosfera) infatti si ha che:\\
+- Onde e.m. con $\omega<\omega_p$ sono riflesse (onde radio AM)\\
+- Onde e.m. con $\omega>\omega_p$ sono trasmesse (onde TV e radio FM)\\
+\\
+Si definisce diffusione quel fenomeno per cui l'onda e.m. si propaga con dispersione e assorbimento trascurabili, ma modifica significativamente la sua distribuzione spaziale.\\
+I dipoli del materiale assorbono totalmente l'energia dell'onda e la riemettono in direzione casuale, se i dipoli hanno orientamento casuale. Il campo diffuso è determinato dalla sovrapposizione dei campi di dipolo.\\
+\\
+Consideriamo il campo di due dipoli della formula (9) la cui intensità totale è data da (10).\\
+Si studia la diffusione da un gas, che è descrivibile come un insieme di emettitori:\\
+- non interagenti tra di loro;\\
+- con posizioni casuali e variabili nel tempo.\\
+Le fasi relative variano nel tempo e il sistema si comporta come un insieme di emettitori incoerenti, le cui intensità si sommano.\\
+\\
+Per un singolo atomo nel modello dei dielettrici si ha
+\begin{equation}
+    z=\frac{q_eE_0}{m(\omega_0^2-\omega^2+i\gamma\omega)}
+\nonumber
+\end{equation}
+e supponendo trascurabile l'assorbimento ($\gamma= 0$), si ha
+\begin{equation}
+    p=q_ez\cong\frac{q_e^2E_0}{m(\omega_0^2-\omega^2)}
+\nonumber
+\end{equation}
+Quindi la potenza irraggiata dal dipolo è data da
+\begin{equation}
+\begin{split}
+    P&=\frac{p^2\omega^4}{12\pi\varepsilon_0c^3}=\frac{\omega^4}{12\pi\varepsilon_0c^3}\frac{q_e^4E_0^2}{m^2(\omega_0^2-\omega^2)^2}\\
+    &=\frac{8}{3}\pi\left(\frac{\varepsilon_0E_0^2c}{2}\right) \left(\frac{q_e^4}{16\pi^2\varepsilon_0^2}m^2c^4\right) \frac{\omega^4}{(\omega_0^2-\omega^2)^2}\\
+    &=\frac{8}{3}\pi\ I_i\ r_0^2\ \frac{\omega^4}{(\omega_0^2-\omega^2)^2}
+    \nonumber
+\end{split}
+\end{equation}
+dove $r_0$ è il raggio della distribuzione sferica uniforme di carica negativa, che descrive l’elettrone nel modello classico (vd: polarizzazione per deformazione, dove si chiamava $a$).\\
+\\
+Allora si ha che 
+\begin{equation}
+    P=I_i\sigma_s
+\nonumber
+\end{equation}
+dove si definisce $\sigma_s[m^2]=\frac{8}{3}\pi \ r_0^2\frac{\omega^4}{(\omega_0^2-\omega^2)^2}$ come la sezione d'urto per la diffusione di Rayleigh.\\
+\\
+La sezione d’urto:\\
+- ha le dimensioni di un’area (tipicamente espresso in $cm^2$)\\
+- è una misura dell’efficienza di un fenomeno.\\
+La potenza diffusa è quella che corrisponde all’intensità incidente sulla sezione d’urto.\\
+\\
+Per $\omega<<\omega_0$ si ha che $\sigma_s=\frac{8}{3}\pi \ r_0^2\frac{\omega^4}{\omega_0^4} \propto \omega^4$, dunque l'efficienza di diffusione è proporzionale a $\omega^4$. Quindi le frequenze più alte sono più diffuse, ed è il motivo per cui l'atmosfera diffonde con maggiore intensità il blu rispetto al rosso (cielo blu).\\
+\\
+Se l'elettrone è libero, con $\omega_0 = 0$ (come nel plasma, cioè in un gas rarefatto e ionizzato) si ottiene $\sigma_s=\frac{8}{3}\pi \ r_0^2$, ossia si ha la diffusione Thompson, che non dipende dalla frequenza.\\
+\\
+Perchè le nuvole sono bianche e non azzurre?
+Le nuvole sono costituite da goccioline d’acqua condensata.
+Se la goccia è piccola, tutti i suoi $N$ atomi sono vicini e vengono investiti contemporaneamente dall’onda e quindi oscillano tutti in fase. Si sommano i campi $E_{tot}\propto NE$ e quindi $I_{tot}\propto N^2$.\\
+Se l’acqua non è condensata, le molecole sono lontane, non oscillano in fase e si sommano le intensità. Infatti al crescere della dimensione della goccia ($\propto N$), cresce l’efficienza della diffusione ($\propto N^2$).\\
+Quando la goccia ha dimensioni confrontabili con la lunghezza d’onda o superiori, non tutte le molecole restano in fase. La dimensione limite viene raggiunta prima per il blu che per il rosso. Questo fenomeno, più efficiente per il rosso, compensa la maggiore efficienza della diffusione per il blu e rende le nuvole bianche o grigiastre.\\
+\\
+La luce diffusa a $90^{\circ}$ è polarizzata linearmente anche se la luce incidente non è polarizzata:\\
+- \textbf{E} incidente oscilla (e mette in oscillazione i dipoli) nel piano ortogonale alla direzione di propagazione (onda trasversale).\\
+- i dipoli non emettono nella direzione di oscillazione.\\
+Nella direzione di propagazione la luce resta non polarizzata.\\
+\\
+Si studia la propagazione in un mezzo trasparente.\\
+In questi mezzi gli atomi sono disposti ordinatamente, e qualunque sia l'orientazione dei dipoli, possiamo sempre considerare la loro emissione come la sovrapposizione del campo di un dipolo parallelo alla propagazione di propagazione e di uno ortogonale.\\
+Si osserva che:\\
+- i dipoli che emettono nella direzione di propagazione dell'onda oscillano quando sono raggiunti dall'onda. L’onda li sincronizza e perciò Sono sempre in fase, indipendentemente dalla loro posizione.\\
+- i dipoli che emettono nella direzione ortogonale alla direzione di propagazione oscillano simultaneamente quando sono investiti dal fronte dell'onda, ma sono disposti casualmente rispetto alla lunghezza d’onda. Le fasi relative sono casuali quindi il campo medio è nullo.
+
+\section*{C.22 - Ottica geometrica}
+Ipotesi dell'ottica geometrica:\\
+- in un mezzo trasparente, omogeneo e isotropo, la radiazione elettromagnetica si propaga senza deviare per effetto della presenza di ostacoli;\\
+- si trascurano gli effetti di diffrazione;\\
+- si ha una propagazione a raggi, che in presenza di mezzi materiali è determinata esclusivamente dalle leggi di Snell.\\
+\\
+In un prisma, le relazioni tra gli angoli sono:
+\begin{align*}
+    \sin i&=n\sin r & \sin i'&=n\sin r'
+\end{align*}
+con
+\begin{align*}
+    r+r'&=\alpha & \delta=(i-r)+(i'-r')&=i+i?-\alpha
+\end{align*}
+dove $\alpha$ è l'angolo di apertura e $\delta$ è l'angolo di deviazione.\\
+Si ha la deviazione minima $\delta_{min}$ quando $\frac{d\delta}{di}=0$, ossia quando $\frac{di'}{di}=-1$.\\
+Dalle relazioni di Snell si ottiene
+\begin{align*}
+    \cos idi&=n\cos rdr & \cos i'di'&=n\cos r'dr'
+\end{align*}
+Inoltre, sapendo che $r+r'=\alpha$, si ha che $dr=-dr'$, quindi si ha deviazione minima quando
+\begin{align*}
+    i&=i' & r=&r'
+\end{align*}
+ossia quando
+\begin{align*}
+    2i&=\delta_{min}+\alpha & r=&\frac{\alpha}{2}
+\end{align*}
+In questo caso il valore dell'indice di rifrazione è espresso dalla formula
+\begin{equation}
+    n=\frac{\sin i}{\sin r}= \frac{\sin [(\delta_{min}+\alpha)/2]}{\sin (\alpha/2)}
+    \nonumber
+\end{equation}
+In generale l’indice di rifrazione del prisma dipende da $\lambda$. Dalla formula dei dielettrici, trascurando l’assorbimento $\Gamma$ e considerando $\gamma=0$, si ha che
+\begin{equation}
+    n^2=1+\frac{k}{\omega_0^2-\omega^2}
+    \nonumber
+\end{equation}
+Dunque assumendo $\omega<<\omega_0$ si ottiene 
+\begin{equation}
+    n=k_1+\frac{k_2}{\lambda^2}
+    \nonumber
+\end{equation}
+che prende il nome di Formula di Cauchy.\\
+\\
+La dispersione $D$ è la variazione della deviazione minima con la lunghezza d’onda, tale che
+\begin{equation}
+    D=\frac{d\delta}{d\lambda}=\frac{d\delta}{dn}\frac{dn}{d\lambda}
+    \nonumber
+\end{equation}
+che a deviazione minima diventa
+\begin{equation}
+    D=\frac{d\delta}{d\lambda}=-\frac{2\sin(\alpha/2)}{\cos [(\delta_{min}+\alpha)/2]}\frac{2k_2}{\lambda^3}
+    \nonumber
+\end{equation}
+Si osserva che $D\propto\frac{1}{\lambda^3}$, quindi il violetto risulta più deviato del rosso. Ciò rappresenta il principio alla base del funzionamento dello spettrometro e del monocromatore a prisma.\\
+\\
+Dato uno specchio sferico di raggio $r$, si considera:\\
+- superficie sferica ideale totalmente riflettente;\\
+- approssimazione dell’ottica geometrica;\\
+- approssimazione parassiale: i raggi che incidono sulla superficie sono concentrati in una piccola zona intorno all’asse.\\
+Vale la legge degli specchi, secondo la quale
+\begin{equation}
+    \frac{1}{p}+\frac{1}{q}=\frac{2}{r}=\frac{1}{f}
+\end{equation}
+dove $f=\frac{r}{2}$ rappresenta la distanza focale dello specchio.\\
+Per convenzione si considera:\\
+- $r > 0$ per lo specchio concavo;\\
+- $r < 0$ per lo specchio convesso.\\
+\\
+Nel caso di specchio concavo, i raggi convergono fisicamente nel fuoco o nel centro, mentre nel caso di specchio convesso, i raggi sembrano provenire dal fuoco o dal centro, che sono posti dietro lo specchio.\\
+Lo specchio concavo produce:\\
+- un’immagine reale e capovolta per $p > f$; \\
+- un’immagine virtuale e diritta per $p < f$.\\
+Lo specchio convesso produce un’immagine virtuale e diritta.\\
+\\
+Nell’ottica geometrica, l’immagine di un oggetto è la replica identica, a parte un fattore di scala detto ingrandimento $M=\frac{q}{p}$.\\
+\\
+Dato un diottro sferico di raggio $r$, vale la seguente formula
+\begin{equation}
+    \frac{n_1}{p}+\frac{n_2}{q}=\frac{n_2-n_1}{r}
+    \nonumber
+\end{equation}
+A differenza dello specchio, il diottro ha due punti focali, tali per cui:\\
+- $q=\infty$, se $\frac{n_1}{f_e}=\frac{n_2-n_1}{r}$;\\
+- $p=\infty$, se $\frac{n_2}{f_i}=\frac{n_2-n_1}{r}$.\\
+Si può produrre immagini reali e virtuali con diottri positivi (convessi) e negativi (concavi), oppure si assiste alla formazione di immagini di oggetti estesi.\\
+Nel caso di diottro piano, con $r\rightarrow \infty$, ossia con $M=-1$, oggetto e immagine sono sempre di verso concorde: l'immagine virtuale è diritta.\\
+\\
+Nel caso di lente sottile si combinano le equazioni di due diottri
+\begin{equation}
+    \frac{n_1}{p}+\frac{n_2}{q'}=\frac{n_2-n_1}{r_1}
+    \nonumber
+\end{equation}
+\begin{equation}
+    \frac{n_2}{L-q'}+\frac{n_1}{q}=\frac{n_1-n_2}{r}
+    \nonumber
+\end{equation}
+ma considerando una lente sottile, ossia tale che $L<<p,q',q$, si ha
+\begin{equation}
+    \frac{n_1}{p}+\frac{n_2}{q}=\frac{n_2-n_1}{r_1}+\frac{n_1-n_2}{r}
+    \nonumber
+\end{equation}
+Quindi se la lente è in aria, ossia con $n_1=1$, si ha
+\begin{equation}
+    \frac{n_1}{p}+\frac{n_2}{q}=(n-1)\left(\frac{1}{r_1}-\frac{1}{r_2}\right)
+    \nonumber
+\end{equation}
+La lente ha due fuochi uguali e in posizione simmetrica:\\
+- $q=\infty$, se $\frac{1}{f}=(n-1)\left(\frac{1}{r_1}-\frac{1}{r_2}\right)$;\\
+- $p=\infty$, se $\frac{1}{f}=(n-1)\left(\frac{1}{r_1}-\frac{1}{r_2}\right)$.\\
+Se $f$ è la lunghezza focale allora vale per le lenti sottili (...).\\
+\\
+Si hanno diversi tipi di lenti:\\
+- biconvessa, con $r_1>0$, $r_2<0$ e $f>0$;\\
+- pianoconvessa, con $r_1 \rightarrow \infty$, $r_2<0$ e $f>0$;\\
+- biconcava, con $r_1<0$, $r_2>0$ e $f>0$;\\
+- pianoconcava, con $r_1\rightarrow \infty$, $r_2>0$ e $f<0$;\\
+- menisco, con $r_1>0$, $r_2>0$ e $f$ che dipende da $r$.\\
+- lente cilindrica, con $r_x\rightarrow\infty$\\
+\\
+Con una lente convergente ($f > 0$):\\
+- se $p > f$, si ha un immagine reale e capovolta,\\
+- se $p < f$, si ha un immagine virtuale e diritta.\\
+Con una lente divergente ($f < 0$):\\
+- l’immagine è sempre virtuale.\\
+\\
+Componendo più lenti sottili a contatto si ottiene una lente sottile equivalente la cui focale risulta
+\begin{equation}
+    \frac{1}{f}=\sum_i\frac{1}{f_i}
+    \nonumber
+\end{equation}
+dove le focali vanno sommate con il loro segno.\\
+\\
+Nel caso dell'occhio umano possono verificarsi delle aberrazione di tipo:\\
+- cromatico, con $n$ funzione di $\lambda$;\\
+- sferico, con una lente non in approssimazione parassiale, non sottile;\\
+- astigmatico, con curvatura diversa secondo due assi, poichè direzioni corrispondenti a curvature diverse vanno a fuoco a distanze diverse.\\
+\\
+Il cristallino è una lente biconvessa, convergente, con: \\
+- $n \cong 1.4-1.45$;\\
+- $r_1 \cong 10mm$ e $r_2 \cong 6mm$.\\
+Ha focale variabile grazie ai muscoli ciliari che ne
+variano i raggi di curvatura.\\
+La deformabilità consente l’accomodamento, cioè la formazione di immagini reali e capovolte sulla retina per oggetti posti a distanze che variano tra:\\
+- Punto prossimo: $d_P \cong 15-25 cm$;\\
+- Punto remoto: $d_R \rightarrow\infty$.\\
+\\
+Si è ipermetrope (presbite) quando:\\
+- $d_P > 25 cm$, cristallino poco convergente;\\
+- richiede una correzione con lente convergente.\\
+Si è miope quando:\\
+- $dR < \infty$, cristallino troppo convergente;\\
+- richiede una correzione con lente divergente.\\
+\\
+Si studiano gli effetti di diffrazione con le lenti.\\
+Una lente fa convergere nel punto di fuoco un fascio di raggi paralleli, dunque la lente forma nel punto di fuoco l’immagine di una sorgente all’infinito.\\
+La figura di diffrazione di Fraunhofer si osserva nella appossimazione che l’apertura sia a distanza infinita: ponendo un’apertura davanti a una lente, nel fuoco della lente si osserva la figura di diffrazione di Fraunhofer dell’apertura.\\
+L’effetto di diffrazione è quello di trasformare il punto focale dell’ottica geometrica in una figura di diffrazione, quindi tenendo conto degli effetti di diffrazione intrinseci nel fatto che la lente ha una apertura finita, l’immagine che si ottiene con una lente non sarà mai una replica perfetta dell’oggetto.\\
+Un sistema ottico al cui interno si assumono le leggi dell’ottica geometrica e i cui effetti di diffrazione sono determinati dalle aperture del sistema si dice limitato per diffrazione.\\
+
+\end{document}
